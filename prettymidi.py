@@ -1,7 +1,38 @@
 import pretty_midi
 
 import numpy as np
-import pandas as pd
+
+import pydub
+from midi2audio import FluidSynth
+from pydub import AudioSegment
+import itertools
+import os
+
+# import IPython.display
+# import matplotlib.pyplot as plt
+# import numpy as np
+# import pretty_midi
+# from pymixer.project import MidiTrackSpec, Project
+# from pymixer.sound_makers import FluidsynthSoundMaker
+# from sinethesizer.synth.core import Event
+# from sinethesizer.effects.reverb import apply_room_reverb
+# from sinethesizer.effects.stereo import apply_stereo_to_mono_conversion
+# from sinethesizer.io.events_to_wav import write_timeline_to_wav
+
+# from fluidsynth import Synth
+
+# synth = Synth()
+# synth.start(driver="file")  # Output to file instead of audio device
+
+# # Load a SoundFont
+# sfid = synth.sfload("creativelabs.sf2")
+# synth.program_select(0, sfid, 0, 0)
+
+# # Render MIDI file to WAV
+# synth.midi_file_to_audio("piano.mid", "output.wav")
+
+# # Clean up
+# synth.delete()
 
 # def play_frequency(frequency, duration, velocity=100, instrument=0):
 #     """Plays a frequency on MIDI using pitch bends."""
@@ -57,13 +88,61 @@ import pandas as pd
 data = pd.read_csv("data.csv")
 
 molecule = pretty_midi.PrettyMIDI()
-
 molecule_instr = pretty_midi.Instrument(program = 102)
-
-note_num = pretty_midi.hz_to_note_number(440)
-note_num = int(note_num)
-
-note = pretty_midi.Note(velocity = 10, pitch = note_num, start=0, end=100)
-molecule_instr.notes.append(note)
+print(pretty_midi.hz_to_note_number(440))
+a_note = pretty_midi.Note(velocity = 10, pitch = int(pretty_midi.hz_to_note_number(440)), start =0, end=100)
+molecule_instr.notes.append(a_note)
 molecule.instruments.append(molecule_instr)
-molecule.write("GOBLIn.mid")
+molecule.write("help1.mid")
+
+# # Initialize the synthesizer (you need a soundfont file, e.g., a .sf2 file)
+# soundfont = "path/to/your/soundfont.sf2"
+# synth = fluidsynth.Synth()
+# synth.sfload(soundfont)
+# synth.start()
+
+# # Load and play MIDI file
+# midi_file = "input_file.mid"
+# synth.midi_file_to_audio(midi_file, "output_audio.wav")
+
+# synth = FluidSynth("creativelabs.sf2")
+
+# synth.midi_to_audio('goblin.mid', 'goblin2.wav')
+
+
+# # Load the generated audio
+# audio = AudioSegment.from_file("output_audio.wav")
+
+# # Apply a low-pass filter (example)
+# filtered_audio = audio.low_pass_filter(1000)
+
+# # Export the filtered audio
+# filtered_audio.export("filtered_audio.wav", format="wav")
+
+# timidity piano.mid -Ow -o out.wav
+
+# tracks_specs = [
+#     MidiTrackSpec(
+#         FluidsynthSoundMaker(
+#             "mid_files/track_1.mid",
+#             "creativelabs.sf2",
+#             {'1': 15},
+#         ),
+#             '02.mid',
+#         '03.mid'
+#     )]
+
+# project = Project(
+#     "mid_files",
+#     tracks_specs,
+# )
+
+# gains = [1.0, 1.0, 1.0, 1.0, 1.2, 1.2]
+# opening_silence = 0.5
+# trailing_silence = 0.5
+
+# timeline = project.mix(gains, opening_silence, trailing_silence)
+# timeline /= np.max(np.abs(timeline))
+# IPython.display.Audio(timeline, rate=project.frame_rate)
+
+# write_timeline_to_wav("result.wav", timeline, project.frame_rate)
