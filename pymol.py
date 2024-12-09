@@ -5,6 +5,8 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 import pubchempy
 from pymol import preset
+import imageio
+
 
 # pymol.finish_launching(['pymol', '-q'])
 
