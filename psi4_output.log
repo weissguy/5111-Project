@@ -1,0 +1,4000 @@
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:51 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.47440586622751   -7.54744e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.93449658744514   -4.60091e-01   2.14675e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.98668212044073   -5.21855e-02   1.29784e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.00660652596875   -1.99244e-02   1.48307e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.00712145407635   -5.14928e-04   2.94171e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.00714609092550   -2.46368e-05   5.29491e-05 DIIS
+   @DF-RHF iter   6:   -76.00714723166980   -1.14074e-06   7.86140e-06 DIIS
+   @DF-RHF iter   7:   -76.00714725945861   -2.77888e-08   1.43713e-06 DIIS
+   @DF-RHF iter   8:   -76.00714726049512   -1.03651e-09   3.10369e-07 DIIS
+   @DF-RHF iter   9:   -76.00714726054612   -5.10028e-11   4.49578e-08 DIIS
+   @DF-RHF iter  10:   -76.00714726054676   -6.39488e-13   5.17956e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.00714726054676
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              8.8880683614469191
+    One-Electron Energy =                -122.5061844987284871
+    Two-Electron Energy =                  37.6109688767348018
+    Total Energy =                        -76.0071472605467591
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0027210           -0.0223094           -0.0195884
+ Dipole Y            :          0.1230227           -1.0087829           -0.8857602
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.8859768
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:53 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          2 seconds =       0.03 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          2 seconds =       0.03 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:53 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.001499939089     0.067824106403     0.000000000000    15.994914619570
+         H           -0.794748060911    -0.520896893597     0.000000000000     1.007825032230
+         H            0.770942939089    -0.555520893597     0.000000000000     1.007825032230
+
+  Nuclear repulsion =    8.888068361446919
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.001117011081     0.050482424729    -0.000000000000
+       2       -0.034186745836    -0.024497777479    -0.000000000000
+       3        0.033069734755    -0.025984647250     0.000000000000
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:53 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          2 seconds =       0.03 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       8.000000            15.994915          0.00283447  0.12816899  0.00000000   
+	       1.000000             1.007825         -1.50185617 -0.98435247  0.00000000   
+	       1.000000             1.007825          1.45687101 -1.04978235  0.00000000   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.871309           0.990254
+	 R(1,3)           =         1.871307           0.990253
+	 B(2,1,3)         =         1.824046         104.510135
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       0.99025       -0.34647       -0.04437       0.94588
+	               R(1,3)       0.99025       -0.34646       -0.04437       0.94588
+	             B(2,1,3)     104.51013       -0.00009       -0.40192     104.10821
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------~
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   ~
+	----------------------------------------------------------------------------------------------~
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o~
+	----------------------------------------------------------------------------------------------~
+	     1     -76.00714726   -7.60e+01      4.21e-02      3.43e-02 o    8.39e-02      6.86e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    O   0.0011378446   0.0514657308   0.0000000000
+	    H  -0.7574522043  -0.5135383434   0.0000000000
+	    H   0.7340091770  -0.5465210681   0.0000000000
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O            0.001439153450     0.065077988098     0.000000000000
+    H           -0.757150895468    -0.499926086108     0.000000000000
+    H            0.734310485849    -0.532908810778     0.000000000000
+
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:53 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+  Reading orbitals from file C:\Users\jaked\AppData\Local\Temp/psi4_output.default.24408.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -76.05602150808012   -7.60560e+01   5.10167e-03 
+   @DF-RHF iter   1:   -76.01053607157415    4.54854e-02   7.17407e-04 ADIIS/DIIS
+   @DF-RHF iter   2:   -76.01064495993715   -1.08888e-04   1.57417e-04 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01065379199311   -8.83206e-06   5.37473e-05 DIIS
+   @DF-RHF iter   4:   -76.01065517357314   -1.38158e-06   1.13187e-05 DIIS
+   @DF-RHF iter   5:   -76.01065522579120   -5.22181e-08   5.26788e-06 DIIS
+   @DF-RHF iter   6:   -76.01065523193058   -6.13939e-09   9.33310e-07 DIIS
+   @DF-RHF iter   7:   -76.01065523226448   -3.33898e-10   1.37187e-07 DIIS
+   @DF-RHF iter   8:   -76.01065523227224   -7.75913e-12   1.85388e-08 DIIS
+   @DF-RHF iter   9:   -76.01065523227240   -1.56319e-13   1.70905e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01065523227240
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.3059985454187171
+    One-Electron Energy =                -123.2497783827077171
+    Two-Electron Energy =                  37.9331246050166015
+    Total Energy =                        -76.0106552322723985
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0020767           -0.0214053           -0.0193286
+ Dipole Y            :          0.0939072           -0.9679385           -0.8740313
+ Dipole Z            :         -0.0000000            0.0000000           -0.0000000
+ Magnitude           :                                                    0.8742450
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:54 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          3 seconds =       0.05 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:54 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.001439153450     0.065077988098     0.000000000000    15.994914619570
+         H           -0.757150895468    -0.499926086108     0.000000000000     1.007825032230
+         H            0.734310485849    -0.532908810778     0.000000000000     1.007825032230
+
+  Nuclear repulsion =    9.305998545418717
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000031126933     0.001410562332     0.000000000000
+       2        0.003513629234    -0.000783301041    -0.000000000000
+       3       -0.003544756167    -0.000627261291     0.000000000000
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:54 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          3 seconds =       0.05 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       8.000000            15.994915          0.00271961  0.12297957  0.00000000   
+	       1.000000             1.007825         -1.43080783 -0.94472339  0.00000000   
+	       1.000000             1.007825          1.38764571 -1.00705170  0.00000000   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.787454           0.945880
+	 R(1,3)           =         1.787454           0.945880
+	 B(2,1,3)         =         1.817031         104.108212
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       0.94588        0.01936        0.00152       0.94740
+	               R(1,3)       0.94588        0.01936        0.00152       0.94740
+	             B(2,1,3)     104.10821        0.00037        1.63579     105.74400
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     2     -76.01065523   -3.51e-03      4.87e-03      3.41e-03 o    2.85e-02      1.66e-02 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    O   0.0012949188   0.0585545820   0.0000000000
+	    H  -0.7665172633  -0.4964556670   0.0000000000
+	    H   0.7438210883  -0.5298558238   0.0000000000
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O           -0.000000000000     0.000000000000     0.063998532183
+    H           -0.755353808993     0.000000000000    -0.507851576545
+    H            0.755353808993     0.000000000000    -0.507851571623
+
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:54 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+  Reading orbitals from file C:\Users\jaked\AppData\Local\Temp/psi4_output.default.24408.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -75.63457964397028   -7.56346e+01   2.51093e-02 
+   @DF-RHF iter   1:   -75.96939722805718   -3.34818e-01   1.43434e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -76.00016013226220   -3.07629e-02   8.23592e-03 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.00930262899290   -9.14250e-03   1.63227e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01064566411429   -1.34304e-03   3.25187e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071574629955   -7.00822e-05   6.86639e-05 DIIS
+   @DF-RHF iter   6:   -76.01071877176828   -3.02547e-06   1.50705e-05 DIIS
+   @DF-RHF iter   7:   -76.01071889548030   -1.23712e-07   4.02891e-06 DIIS
+   @DF-RHF iter   8:   -76.01071890422500   -8.74471e-09   6.23975e-07 DIIS
+   @DF-RHF iter   9:   -76.01071890442887   -2.03869e-10   1.23816e-07 DIIS
+   @DF-RHF iter  10:   -76.01071890443572   -6.84963e-12   1.61297e-08 DIIS
+   @DF-RHF iter  11:   -76.01071890443578   -5.68434e-14   2.18272e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071890443578
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2871758570565177
+    One-Electron Energy =                -123.2224767881830161
+    Two-Electron Energy =                  37.9245820266907288
+    Total Energy =                        -76.0107189044357767
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0883674           -0.9518832           -0.8635158
+ Magnitude           :                                                    0.8635158
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:55 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          4 seconds =       0.07 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:55 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000000     0.000000000000     0.063998532183    15.994914619570
+         H           -0.755353808993     0.000000000000    -0.507851576545     1.007825032230
+         H            0.755353808993     0.000000000000    -0.507851571623     1.007825032230
+
+  Nuclear repulsion =    9.287175857056518
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000002937     0.000000000625    -0.000453377830
+       2       -0.000453880494     0.000000000056     0.000226687793
+       3        0.000453877557    -0.000000000680     0.000226690037
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:55 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          4 seconds =       0.07 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       8.000000            15.994915         -0.00000000  0.00000000  0.12093970   
+	       1.000000             1.007825         -1.42741183  0.00000000 -0.95970039   
+	       1.000000             1.007825          1.42741183  0.00000000 -0.95970038   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.790332           0.947403
+	 R(1,3)           =         1.790332           0.947403
+	 B(2,1,3)         =         1.845581         105.743998
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       0.94740       -0.00185       -0.00011       0.94729
+	               R(1,3)       0.94740       -0.00185       -0.00011       0.94729
+	             B(2,1,3)     105.74400       -0.00006       -0.24030     105.50370
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     3     -76.01071890   -6.37e-05      8.14e-04      5.05e-04 o    4.19e-03      2.43e-03 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    O  -0.0000000006   0.0000000000   0.0650092445
+	    H  -0.7540652663   0.0000000000  -0.5083569325
+	    H   0.7540652669   0.0000000000  -0.5083569280
+
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O           -0.000000000098     0.000000000000     0.064168202792
+    H           -0.754065265834     0.000000000000    -0.509197974171
+    H            0.754065267391     0.000000000000    -0.509197969699
+
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:55 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+  Reading orbitals from file C:\Users\jaked\AppData\Local\Temp/psi4_output.default.24408.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -76.01081483983108   -7.60108e+01   6.14804e-05 
+   @DF-RHF iter   1:   -76.01072061080212    9.42290e-05   1.35726e-05 DIIS
+   @DF-RHF iter   2:   -76.01072064796104   -3.71589e-08   5.82886e-06 DIIS
+   @DF-RHF iter   3:   -76.01072065484618   -6.88514e-09   2.42885e-06 DIIS
+   @DF-RHF iter   4:   -76.01072065676367   -1.91748e-09   3.81251e-07 DIIS
+   @DF-RHF iter   5:   -76.01072065684987   -8.62030e-11   2.96740e-08 DIIS
+   @DF-RHF iter   6:   -76.01072065685025   -3.83693e-13   2.46227e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065685025
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888137084315936
+    One-Electron Energy =                -123.2245054540662750
+    Two-Electron Energy =                  37.9249710887844245
+    Total Energy =                        -76.0107206568502534
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892631           -0.9544068           -0.8651437
+ Magnitude           :                                                    0.8651437
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:55 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          4 seconds =       0.07 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:48:55 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000098     0.000000000000     0.064168202792    15.994914619570
+         H           -0.754065265834     0.000000000000    -0.509197974171     1.007825032230
+         H            0.754065267391     0.000000000000    -0.509197969699     1.007825032230
+
+  Nuclear repulsion =    9.288813708431594
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001199     0.000000000001    -0.000024988379
+       2        0.000015791289     0.000000000000     0.000012493732
+       3       -0.000015792488    -0.000000000001     0.000012494646
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:48:55 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          4 seconds =       0.07 minutes
+
+    			-----------------------------------------
+
+    			 OPTKING 3.0: for geometry optimizations 
+
+    			     By R.A. King, Bethel University     
+
+    			        with contributions from          
+
+    			    A.V. Copan, J. Cayton, A. Heide      
+
+    			-----------------------------------------
+
+    
+	                            ===> Fragment 1 <== 
+
+	 Z (Atomic Numbers)          Masses                          Geom                  
+	       8.000000            15.994915         -0.00000000  0.00000000  0.12126033   
+	       1.000000             1.007825         -1.42497683  0.00000000 -0.96224471   
+	       1.000000             1.007825          1.42497684  0.00000000 -0.96224471   
+
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.790124           0.947293
+	 R(1,3)           =         1.790124           0.947293
+	 B(2,1,3)         =         1.841387         105.503695
+
+
+	        --- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	-------------------------------------------------------------------------------
+	           Coordinate      Previous         Force          Change          New 
+	           ----------      --------        ------          ------        ------
+	               R(1,2)       0.94729        0.00017        0.00002       0.94731
+	               R(1,3)       0.94729        0.00017        0.00002       0.94731
+	             B(2,1,3)     105.50370       -0.00000       -0.00086     105.50284
+	-------------------------------------------------------------------------------
+
+	                                 ==> Convergence Check <==                                  
+    
+	Measures of convergence in internal coordinates in au.
+    
+	Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+
+	----------------------------------------------------------------------------------------------
+	   Step    Total Energy     Delta E     Max Force     RMS Force      Max Disp      RMS Disp   
+	----------------------------------------------------------------------------------------------
+	  Convergence Criteria     1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+	----------------------------------------------------------------------------------------------
+	     4     -76.01072066   -1.75e-06      2.01e-05 *    1.64e-05 o    3.92e-05 *    3.32e-05 o  ~
+	----------------------------------------------------------------------------------------------
+
+Next Geometry in Ang 
+	Fragment 1 (Ang)
+
+	    O  -0.0000000007   0.0000000000   0.0641803319
+	    H  -0.7540774909   0.0000000000  -0.5092040385
+	    H   0.7540774930   0.0000000000  -0.5092040345
+
+
+    Final optimized geometry and variables:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O           -0.000000000098     0.000000000000     0.064168202792
+    H           -0.754065265834     0.000000000000    -0.509197974171
+    H            0.754065267391     0.000000000000    -0.509197969699
+
+
+         ----------------------------------------------------------
+                                   FINDIF
+                     R. A. King and Jonathon Misiewicz
+         ----------------------------------------------------------
+
+ 13 displacements needed ...
+
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //    FiniteDifference Computations  //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4249768331474093, 0.0,
+                           -0.9622447148205258, 1.4249768360888875, 0.0, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:00 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864391927866   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078955450684   -4.02146e-01   2.14810e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236534747554   -5.15758e-02   1.23472e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026636378829   -1.79010e-02   1.40921e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01070239753818   -4.36034e-04   2.50069e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071975318001   -1.73556e-05   4.64148e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063233649   -8.79156e-07   7.27382e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065621688   -2.38804e-08   1.14958e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065682072   -6.03848e-10   2.44649e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065684994   -2.92175e-11   3.39506e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065685031   -3.69482e-13   4.01339e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065685031
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888137084315936
+    One-Electron Energy =                -123.2245054782950149
+    Two-Electron Energy =                  37.9249711130131146
+    Total Energy =                        -76.0107206568503102
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0892630           -0.9544068           -0.8651437
+ Magnitude           :                                                    0.8651437
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:01 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         10 seconds =       0.17 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:01 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.424976833147     0.000000000000    -0.962244714821     1.007825032230
+         H            1.424976836089     0.000000000000    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288813708431594
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001209    -0.000000000000    -0.000024986523
+       2        0.000015790431     0.000000000000     0.000012492801
+       3       -0.000015791640     0.000000000000     0.000012493722
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:01 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         10 seconds =       0.17 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.93
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-0.0004182376612506016, 0.0, 0.12126032924025353, -1.4216579670228526, 0.0,
+                           -0.9622447148205258, 1.4282957022134442, 0.0, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:02 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864048165109   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078287834435   -4.02142e-01   2.14812e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99235944268351   -5.15766e-02   1.23474e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026085500764   -1.79014e-02   1.40922e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069691039274   -4.36055e-04   2.50080e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071426843058   -1.73580e-05   4.64199e-05 DIIS
+   @DF-RHF iter   6:   -76.01071514782325   -8.79393e-07   7.27494e-06 DIIS
+   @DF-RHF iter   7:   -76.01071517171235   -2.38891e-08   1.14986e-06 DIIS
+   @DF-RHF iter   8:   -76.01071517231634   -6.03990e-10   2.44697e-07 DIIS
+   @DF-RHF iter   9:   -76.01071517234556   -2.92175e-11   3.39715e-08 DIIS
+   @DF-RHF iter  10:   -76.01071517234595   -3.97904e-13   4.02164e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071517234595
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888312557247890
+    One-Electron Energy =                -123.2245251579759469
+    Two-Electron Energy =                  37.9249787299052059
+    Total Energy =                        -76.0107151723459538
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0012867            0.0032918            0.0020051
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892635           -0.9544068           -0.8651433
+ Magnitude           :                                                    0.8651456
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:02 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         11 seconds =       0.18 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:02 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000418237661     0.000000000000     0.121260329240    15.994914619570
+         H           -1.421657967023     0.000000000000    -0.962244714821     1.007825032230
+         H            1.428295702213     0.000000000000    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288831255724789
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.002935171970     0.000000000000    -0.000039441379
+       2        0.001489428369    -0.000000000000     0.001135675988
+       3        0.001445743600    -0.000000000000    -0.001096234610
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:02 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         11 seconds =       0.18 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.94
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [0.0004182372905708685, 0.0, 0.12126032924025353, -1.428295699271966, 0.0,
+                           -0.9622447148205258, 1.4216579699643308, 0.0, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:02 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864048163923   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078287831748   -4.02142e-01   2.14812e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99235944265702   -5.15766e-02   1.23474e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026085498134   -1.79014e-02   1.40922e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069691036639   -4.36055e-04   2.50080e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071426840426   -1.73580e-05   4.64199e-05 DIIS
+   @DF-RHF iter   6:   -76.01071514779701   -8.79393e-07   7.27494e-06 DIIS
+   @DF-RHF iter   7:   -76.01071517168607   -2.38891e-08   1.14986e-06 DIIS
+   @DF-RHF iter   8:   -76.01071517229018   -6.04103e-10   2.44697e-07 DIIS
+   @DF-RHF iter   9:   -76.01071517231927   -2.90896e-11   3.39715e-08 DIIS
+   @DF-RHF iter  10:   -76.01071517231969   -4.26326e-13   4.02164e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071517231969
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888312558209858
+    One-Electron Energy =                -123.2245251581086762
+    Two-Electron Energy =                  37.9249787299680179
+    Total Energy =                        -76.0107151723196779
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0012867           -0.0032918           -0.0020051
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892635           -0.9544068           -0.8651433
+ Magnitude           :                                                    0.8651456
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:03 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         12 seconds =       0.20 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:03 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000418237291     0.000000000000     0.121260329240    15.994914619570
+         H           -1.428295699272     0.000000000000    -0.962244714821     1.007825032230
+         H            1.421657969964     0.000000000000    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288831255820986
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.002935174420    -0.000000000000    -0.000039440353
+       2       -0.001445745299    -0.000000000000    -0.001096236051
+       3       -0.001489429121     0.000000000000     0.001135676404
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:03 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         12 seconds =       0.20 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.92
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, -0.00041823747591073504, 0.12126032924025353, -1.4249768331474093,
+                           0.0033188661245566312, -0.9622447148205258, 1.4249768360888875, 0.0033188661245566312,
+                           -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:04 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864121724034   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078938439357   -4.02148e-01   2.14810e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236524242033   -5.15759e-02   1.23473e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026636023602   -1.79011e-02   1.40921e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01070239737513   -4.36037e-04   2.50071e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071975331922   -1.73559e-05   4.64151e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063248074   -8.79162e-07   7.27379e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065636080   -2.38801e-08   1.14958e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065696462   -6.03819e-10   2.44651e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065699378   -2.91607e-11   3.39511e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065699407   -2.84217e-13   4.01345e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065699407
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2887942319789154
+    One-Electron Energy =                -123.2244699365466118
+    Two-Electron Energy =                  37.9249550475736470
+    Total Energy =                        -76.0107206569940530
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0003079            0.0032918            0.0029839
+ Dipole Z            :          0.0892652           -0.9544068           -0.8651416
+ Magnitude           :                                                    0.8651468
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:04 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         13 seconds =       0.22 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:04 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185    -0.000418237476     0.121260329240    15.994914619570
+         H           -1.424976833147     0.003318866125    -0.962244714821     1.007825032230
+         H            1.424976836089     0.003318866125    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288794231978915
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001203     0.000000074307    -0.000021543960
+       2        0.000014334890    -0.000000037152     0.000010771520
+       3       -0.000014336093    -0.000000037155     0.000010772440
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:04 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         13 seconds =       0.22 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.89
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.00041823747591073504, 0.12126032924025353, -1.4249768331474093,
+                           -0.0033188661245566312, -0.9622447148205258, 1.4249768360888875, -0.0033188661245566312,
+                           -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:04 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864121724530   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078938439800   -4.02148e-01   2.14810e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236524242502   -5.15759e-02   1.23473e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026636024091   -1.79011e-02   1.40921e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01070239737987   -4.36037e-04   2.50071e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071975332414   -1.73559e-05   4.64151e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063248546   -8.79161e-07   7.27379e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065636562   -2.38802e-08   1.14958e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065696948   -6.03862e-10   2.44651e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065699849   -2.90044e-11   3.39511e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065699896   -4.68958e-13   4.01344e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065699896
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2887942319789154
+    One-Electron Energy =                -123.2244699365526088
+    Two-Electron Energy =                  37.9249550475747412
+    Total Energy =                        -76.0107206569989557
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0003079           -0.0032918           -0.0029839
+ Dipole Z            :          0.0892652           -0.9544068           -0.8651416
+ Magnitude           :                                                    0.8651468
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:05 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         14 seconds =       0.23 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:05 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000418237476     0.121260329240    15.994914619570
+         H           -1.424976833147    -0.003318866125    -0.962244714821     1.007825032230
+         H            1.424976836089    -0.003318866125    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288794231978915
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001230    -0.000000074304    -0.000021543064
+       2        0.000014334092     0.000000037150     0.000010771063
+       3       -0.000014335321     0.000000037154     0.000010772000
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:05 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         14 seconds =       0.23 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.96
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.1208420917643428, -1.4249768331474093, 0.0,
+                           -0.9589258486959692, 1.4249768360888875, 0.0, -0.9589258402466014],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:06 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.54020759346959   -7.55402e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94088393976726   -4.00676e-01   2.14805e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99242218296968   -5.15382e-02   1.23281e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026466984469   -1.78425e-02   1.40698e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069874693056   -4.34077e-04   2.48767e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071592831241   -1.71814e-05   4.62815e-05 DIIS
+   @DF-RHF iter   6:   -76.01071680460572   -8.76293e-07   7.28857e-06 DIIS
+   @DF-RHF iter   7:   -76.01071682868584   -2.40801e-08   1.15026e-06 DIIS
+   @DF-RHF iter   8:   -76.01071682929025   -6.04402e-10   2.43885e-07 DIIS
+   @DF-RHF iter   9:   -76.01071682931914   -2.88907e-11   3.36476e-08 DIIS
+   @DF-RHF iter  10:   -76.01071682931942   -2.84217e-13   3.98242e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071682931942
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.3001093302299367
+    One-Electron Energy =                -123.2451110168921531
+    Two-Electron Energy =                  37.9342848573427887
+    Total Energy =                        -76.0107168293194206
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0877189           -0.9511150           -0.8633961
+ Magnitude           :                                                    0.8633961
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:06 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         15 seconds =       0.25 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:06 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.120842091764    15.994914619570
+         H           -1.424976833147     0.000000000000    -0.958925848696     1.007825032230
+         H            1.424976836089     0.000000000000    -0.958925840247     1.007825032230
+
+  Nuclear repulsion =    9.300109330229937
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001233     0.000000000000    -0.002024331773
+       2        0.000864650594    -0.000000000000     0.001012165423
+       3       -0.000864651827    -0.000000000000     0.001012166350
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:06 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         15 seconds =       0.25 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.99
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12167856671616425, -1.4249768331474093, 0.0,
+                           -0.9655635809450824, 1.4249768360888875, 0.0, -0.9655635724957148],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:07 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53707399052604   -7.55371e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94068668136001   -4.03613e-01   2.14817e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99230037336466   -5.16137e-02   1.23666e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026057718350   -1.79602e-02   1.41146e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069858473129   -4.38008e-04   2.51379e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071611672339   -1.75320e-05   4.65492e-05 DIIS
+   @DF-RHF iter   6:   -76.01071699878877   -8.82065e-07   7.25890e-06 DIIS
+   @DF-RHF iter   7:   -76.01071702246895   -2.36802e-08   1.14865e-06 DIIS
+   @DF-RHF iter   8:   -76.01071702307173   -6.02782e-10   2.45373e-07 DIIS
+   @DF-RHF iter   9:   -76.01071702310112   -2.93880e-11   3.42561e-08 DIIS
+   @DF-RHF iter  10:   -76.01071702310159   -4.68958e-13   4.04451e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071702310159
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2775219447605455
+    One-Electron Energy =                -123.2038923010770901
+    Two-Electron Energy =                  37.9156533332149479
+    Total Energy =                        -76.0107170231015914
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0908136           -0.9576986           -0.8668850
+ Magnitude           :                                                    0.8668850
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:07 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         16 seconds =       0.27 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:07 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121678566716    15.994914619570
+         H           -1.424976833147     0.000000000000    -0.965563580945     1.007825032230
+         H            1.424976836089     0.000000000000    -0.965563572496     1.007825032230
+
+  Nuclear repulsion =    9.277521944760545
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001214    -0.000000000000     0.001968729684
+       2       -0.000823965888     0.000000000000    -0.000984365309
+       3        0.000823964674    -0.000000000000    -0.000984364375
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:07 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         16 seconds =       0.27 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.86
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4284986148759595, 0.0,
+                           -0.9622447148205258, 1.4284986178174377, 0.0, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:08 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53625777138758   -7.55363e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94074364732323   -4.04486e-01   2.14755e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99230583440560   -5.15622e-02   1.23630e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01025808651349   -1.79523e-02   1.41113e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069659062880   -4.38504e-04   2.51403e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071417932901   -1.75887e-05   4.67169e-05 DIIS
+   @DF-RHF iter   6:   -76.01071507242145   -8.93092e-07   7.33043e-06 DIIS
+   @DF-RHF iter   7:   -76.01071509677041   -2.43490e-08   1.16797e-06 DIIS
+   @DF-RHF iter   8:   -76.01071509739738   -6.26969e-10   2.47857e-07 DIIS
+   @DF-RHF iter   9:   -76.01071509742741   -3.00275e-11   3.42541e-08 DIIS
+   @DF-RHF iter  10:   -76.01071509742769   -2.84217e-13   4.05115e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071509742769
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2739670279124002
+    One-Electron Energy =                -123.1987903936852149
+    Two-Electron Energy =                  37.9141082683451103
+    Total Energy =                        -76.0107150974276919
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0896825           -0.9544068           -0.8647243
+ Magnitude           :                                                    0.8647243
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:08 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         17 seconds =       0.28 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:08 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.428498614876     0.000000000000    -0.962244714821     1.007825032230
+         H            1.428498617817     0.000000000000    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.273967027912400
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001193     0.000000000000     0.001554912772
+       2       -0.001592185651    -0.000000000000    -0.000777456845
+       3        0.001592184458    -0.000000000000    -0.000777455927
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:08 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         17 seconds =       0.28 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.89
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.421455051418859, 0.0,
+                           -0.9622447148205258, 1.4214550543603373, 0.0, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:09 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.54102655555673   -7.55410e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94082287137277   -3.99796e-01   2.14867e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99241291097090   -5.15900e-02   1.23316e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026324142784   -1.78503e-02   1.40730e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069682906031   -4.33588e-04   2.48743e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071395459233   -1.71255e-05   4.61140e-05 DIIS
+   @DF-RHF iter   6:   -76.01071481999524   -8.65403e-07   7.21792e-06 DIIS
+   @DF-RHF iter   7:   -76.01071484341804   -2.34228e-08   1.13142e-06 DIIS
+   @DF-RHF iter   8:   -76.01071484399949   -5.81451e-10   2.41432e-07 DIIS
+   @DF-RHF iter   9:   -76.01071484402776   -2.82654e-11   3.36497e-08 DIIS
+   @DF-RHF iter  10:   -76.01071484402814   -3.83693e-13   3.97586e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071484402814
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.3036958425373442
+    One-Electron Energy =                -123.2502633731471917
+    Two-Electron Energy =                  37.9358526865817254
+    Total Energy =                        -76.0107148440281293
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0888448           -0.9544068           -0.8655620
+ Magnitude           :                                                    0.8655620
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:09 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         18 seconds =       0.30 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:09 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.421455051419     0.000000000000    -0.962244714821     1.007825032230
+         H            1.421455054360     0.000000000000    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.303695842537344
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001245    -0.000000000000    -0.001627785870
+       2        0.001636939104     0.000000000000     0.000813892465
+       3       -0.001636940349     0.000000000000     0.000813893405
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:09 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         18 seconds =       0.30 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.95
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4249768331474093, -0.00352178172855016,
+                           -0.9622447148205258, 1.4249768360888875, 0.003521781728550162, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:10 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864097277410   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078950551311   -4.02149e-01   2.14810e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236528127328   -5.15758e-02   1.23472e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026636055941   -1.79011e-02   1.40921e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01070239734706   -4.36037e-04   2.50071e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071975327505   -1.73559e-05   4.64152e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063244864   -8.79174e-07   7.27389e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065632971   -2.38811e-08   1.14960e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065693357   -6.03862e-10   2.44653e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065696262   -2.90470e-11   3.39509e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065696304   -4.26326e-13   4.01344e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065696304
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2887953400606076
+    One-Electron Energy =                -123.2244736749298255
+    Two-Electron Energy =                  37.9249576779061641
+    Total Energy =                        -76.0107206569630591
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0892636           -0.9544068           -0.8651432
+ Magnitude           :                                                    0.8651432
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:10 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         19 seconds =       0.32 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:10 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.424976833147    -0.003521781729    -0.962244714821     1.007825032230
+         H            1.424976836089     0.003521781729    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288795340060608
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001216     0.000000000003    -0.000023020305
+       2        0.000013795595     0.000000034095     0.000011509690
+       3       -0.000013796811    -0.000000034098     0.000011510616
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:10 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         19 seconds =       0.32 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.89
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4249768331474093, 0.00352178172855016,
+                           -0.9622447148205258, 1.4249768360888875, -0.003521781728550162, -0.9622447063711581],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:11 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864097279208   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078950553275   -4.02149e-01   2.14810e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236528129320   -5.15758e-02   1.23472e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026636057948   -1.79011e-02   1.40921e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01070239736718   -4.36037e-04   2.50071e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071975329511   -1.73559e-05   4.64152e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063246873   -8.79174e-07   7.27389e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065634982   -2.38811e-08   1.14960e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065695362   -6.03805e-10   2.44653e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065698273   -2.91038e-11   3.39509e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065698314   -4.12115e-13   4.01344e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065698314
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2887953400606076
+    One-Electron Energy =                -123.2244736749457275
+    Two-Electron Energy =                  37.9249576779019861
+    Total Energy =                        -76.0107206569831391
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000           -0.0000000           -0.0000000
+ Dipole Z            :          0.0892636           -0.9544068           -0.8651432
+ Magnitude           :                                                    0.8651432
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:11 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         20 seconds =       0.33 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:11 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.424976833147     0.003521781729    -0.962244714821     1.007825032230
+         H            1.424976836089    -0.003521781729    -0.962244706371     1.007825032230
+
+  Nuclear repulsion =    9.288795340060608
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001230    -0.000000000003    -0.000023020408
+       2        0.000013795530    -0.000000034095     0.000011509736
+       3       -0.000013796761     0.000000034098     0.000011510672
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:11 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         20 seconds =       0.33 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.90
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4249768331474093, 0.0,
+                           -0.9657664965490759, 1.4249768360888875, 0.0, -0.958722924642608],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:12 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864059508683   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078616496446   -4.02146e-01   2.14811e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236230338164   -5.15761e-02   1.23473e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026353388357   -1.79012e-02   1.40922e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069958003963   -4.36046e-04   2.50075e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071693704273   -1.73570e-05   4.64177e-05 DIIS
+   @DF-RHF iter   6:   -76.01071781633495   -8.79292e-07   7.27448e-06 DIIS
+   @DF-RHF iter   7:   -76.01071784022062   -2.38857e-08   1.14975e-06 DIIS
+   @DF-RHF iter   8:   -76.01071784082458   -6.03961e-10   2.44677e-07 DIIS
+   @DF-RHF iter   9:   -76.01071784085364   -2.90612e-11   3.39614e-08 DIIS
+   @DF-RHF iter  10:   -76.01071784085403   -3.83693e-13   4.01765e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071784085403
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888143499725846
+    One-Electron Energy =                -123.2245020284832577
+    Two-Electron Energy =                  37.9249698376566471
+    Total Energy =                        -76.0107178408540278
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0007014            0.0000000            0.0007014
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892644           -0.9544068           -0.8651423
+ Magnitude           :                                                    0.8651426
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:12 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         21 seconds =       0.35 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:12 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.424976833147     0.000000000000    -0.965766496549     1.007825032230
+         H            1.424976836089     0.000000000000    -0.958722924643     1.007825032230
+
+  Nuclear repulsion =    9.288814349972585
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.002103278181     0.000000000000    -0.000027011307
+       2       -0.001032012612     0.000000000000    -0.000786077234
+       3       -0.001071265569    -0.000000000000     0.000813088541
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:12 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         21 seconds =       0.35 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.89
+
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 09 December 2024 01:48PM
+
+    Process ID: 24408
+    Host:       LaComputadora
+    PSIDATADIR: C:\Users\jaked\miniconda3\Library\share\psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input QCSchema <==
+
+--------------------------------------------------------------------------
+{'driver': 'gradient',
+ 'extras': {'psiapi': True, 'wfn_qcvars_only': True},
+ 'id': None,
+ 'keywords': {'GUESS': 'SAD',
+              'MAXITER': 200,
+              'PARENT_SYMMETRY': 'C1',
+              'PRINT': 0,
+              'REFERENCE': 'RHF',
+              'SCF_TYPE': 'DF',
+              'SCF__D_CONVERGENCE': 1e-08,
+              'SCF__E_CONVERGENCE': 1e-08,
+              'SCF__INTS_TOLERANCE': 1e-12,
+              'function_kwargs': {'write_orbitals': False}},
+ 'model': {'basis': '6-31g(d)', 'method': 'scf'},
+ 'molecule': {'atom_labels': ['', '', ''],
+              'atomic_numbers': [8, 1, 1],
+              'extras': {},
+              'fix_com': True,
+              'fix_orientation': True,
+              'fix_symmetry': 'c1',
+              'fragment_charges': [0.0],
+              'fragment_multiplicities': [1],
+              'fragments': [[0, 1, 2]],
+              'geometry': [-1.8533986655988275e-10, 0.0, 0.12126032924025353, -1.4249768331474093, 0.0,
+                           -0.9587229330919755, 1.4249768360888875, 0.0, -0.9657664880997081],
+              'mass_numbers': [16, 1, 1],
+              'masses': [15.99491461957, 1.00782503223, 1.00782503223],
+              'molecular_charge': 0.0,
+              'molecular_multiplicity': 1,
+              'name': 'H2O',
+              'provenance': {'creator': 'QCElemental',
+                             'routine': 'qcelemental.molparse.from_string',
+                             'version': '0.28.0'},
+              'real': [True, True, True],
+              'schema_name': 'qcschema_molecule',
+              'schema_version': 2,
+              'symbols': ['O', 'H', 'H'],
+              'validated': True},
+ 'protocols': {'stdout': True},
+ 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': '0.28.0'},
+ 'schema_name': 'qcschema_input',
+ 'schema_version': 1}
+--------------------------------------------------------------------------
+
+Scratch directory: C:\Users\jaked\AppData\Local\Temp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, -
+    Auxiliary basis highest AM E, G, H:  7, 7, -
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:13 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file C:\Users\jaked\miniconda3\Library\share\psi4\basis\cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. 
+  Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864059513234   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078616500425   -4.02146e-01   2.14811e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -75.99236230342142   -5.15761e-02   1.23473e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.01026353392308   -1.79012e-02   1.40922e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.01069958007905   -4.36046e-04   2.50075e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.01071693708205   -1.73570e-05   4.64177e-05 DIIS
+   @DF-RHF iter   6:   -76.01071781637448   -8.79292e-07   7.27448e-06 DIIS
+   @DF-RHF iter   7:   -76.01071784026010   -2.38856e-08   1.14975e-06 DIIS
+   @DF-RHF iter   8:   -76.01071784086407   -6.03976e-10   2.44677e-07 DIIS
+   @DF-RHF iter   9:   -76.01071784089315   -2.90754e-11   3.39614e-08 DIIS
+   @DF-RHF iter  10:   -76.01071784089353   -3.83693e-13   4.01765e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071784089353
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888143500165317
+    One-Electron Energy =                -123.2245020286016910
+    Two-Electron Energy =                  37.9249698376916200
+    Total Energy =                        -76.0107178408935340
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0007014            0.0000000           -0.0007014
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892644           -0.9544068           -0.8651423
+ Magnitude           :                                                    0.8651426
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:13 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         22 seconds =       0.37 minutes
+
+*** tstart() called on LaComputadora
+*** at Mon Dec  9 13:49:13 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Bohr), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000185     0.000000000000     0.121260329240    15.994914619570
+         H           -1.424976833147     0.000000000000    -0.958722933092     1.007825032230
+         H            1.424976836089     0.000000000000    -0.965766488100     1.007825032230
+
+  Nuclear repulsion =    9.288814350016532
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1       -0.002103275734    -0.000000000000    -0.000027011510
+       2        0.001071264543     0.000000000000     0.000813087712
+       3        0.001032011191     0.000000000000    -0.000786076203
+
+
+*** tstop() called on LaComputadora at Mon Dec  9 13:49:13 2024
+Module time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =        nan seconds =        nan minutes
+	system time =        nan seconds =        nan minutes
+	total time  =         22 seconds =       0.37 minutes
+
+    Psi4 stopped on: Monday, 09 December 2024 01:49PM
+    Psi4 wall time for execution: 0:00:00.99
+
+
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //      FiniteDifference Results     //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+
+  ==> Harmonic Vibrational Analysis <==
+
+  non-mass-weighted Hessian:       Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (0)
+  projection of translations (True) and rotations (True) removed 6 degrees of freedom (6)
+  total projector:                 Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  mass-weighted Hessian:           Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (0)
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000  [cm^-1]
+  pre-proj  low-frequency mode:    0.0000  [cm^-1]
+  pre-proj  all modes:['20.5159i' '17.1322i' '15.9326i' '0.0000i' '0.0000' '0.0000' '1826.5763'
+ '4070.6694' '4188.9582']
+  projected mass-weighted Hessian: Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj  all modes:['0.0000i' '0.0000i' '0.0000i' '0.0000i' '0.0000' '0.0000' '1826.5763'
+ '4070.6694' '4188.9582']
+
+  Vibration                       7                   8                   9           
+  Freq [cm^-1]                1826.5763           4070.6694           4188.9582       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.0823              1.0455              1.0829        
+  Force const [mDyne/A]         2.1275             10.2074             11.1952        
+  Turning point v=0 [a0]        0.2468              0.1682              0.1629        
+  RMS dev v=0 [a0 u^1/2]        0.1815              0.1216              0.1199        
+  IR activ [km/mol]            107.2846            18.2222             58.1719        
+  Char temp [K]               2628.0366           5856.7869           6026.9782       
+  ----------------------------------------------------------------------------------
+      1   O                0.00 -0.00 -0.07    0.00  0.00 -0.05   -0.07  0.00 -0.00   
+      2   H               -0.43 -0.00  0.56    0.58 -0.00  0.40    0.56 -0.00  0.43   
+      3   H                0.43  0.00  0.56   -0.58  0.00  0.40    0.56  0.00 -0.43   
+
+  ==> Thermochemistry Components <==
+
+  Entropy, S
+    Electronic S                             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K] (multiplicity = 1)
+    Translational S                         34.608 [cal/(mol K)]      144.801 [J/(mol K)]       0.05515177 [mEh/K] (mol. weight = 18.0106 [u], P = 101325.00 [Pa])
+    Rotational S                            10.376 [cal/(mol K)]       43.411 [J/(mol K)]       0.01653455 [mEh/K] (symmetry no. = 2)
+    Vibrational S                            0.003 [cal/(mol K)]        0.012 [J/(mol K)]       0.00000462 [mEh/K]
+  Total S                                   44.987 [cal/(mol K)]      188.225 [J/(mol K)]       0.07169094 [mEh/K]
+  Correction S                               0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant volume heat capacity, Cv
+    Electronic Cv                            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cv                         2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Rotational Cv                            2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cv                           0.023 [cal/(mol K)]        0.096 [J/(mol K)]       0.00003657 [mEh/K]
+  Total Cv                                   5.985 [cal/(mol K)]       25.039 [J/(mol K)]       0.00953700 [mEh/K]
+  Correction Cv                              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant pressure heat capacity, Cp
+    Electronic Cp                            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cp                         4.968 [cal/(mol K)]       20.786 [J/(mol K)]       0.00791703 [mEh/K]
+    Rotational Cp                            2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cp                           0.023 [cal/(mol K)]        0.096 [J/(mol K)]       0.00003657 [mEh/K]
+  Total Cp                                   7.972 [cal/(mol K)]       33.354 [J/(mol K)]       0.01270381 [mEh/K]
+  Correction Cp                              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  ==> Thermochemistry Energy Analysis <==
+
+  Raw electronic energy, E_e
+  Total E_e, Electronic energy at well bottom                                           -76.01072066 [Eh]
+
+  Zero-point vibrational energy, ZPVE = Sum_i omega_i / 2,  E_0 = E_e + ZPVE
+    Vibrational ZPVE                        14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297806 [Eh]        5043.102 [cm^-1]
+  Correction ZPVE to E_e                    14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297806 [Eh]        5043.102 [cm^-1]
+  Total E_0, Enthalpy at 0 [K]                                                          -75.98774259 [Eh]
+  *** Absolute enthalpy, not an enthalpy of formation ***
+
+  Thermal (internal) energy, E (includes ZPVE and finite-temperature corrections)
+    Electronic contrib to E beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to E               0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Rotational contrib to E                  0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational contrib to E                14.420 [kcal/mol]       60.332 [kJ/mol]       0.02297930 [Eh]
+  Correction E                              16.197 [kcal/mol]       67.769 [kJ/mol]       0.02581185 [Eh]
+  Total E, Thermal (internal) energy at  298.15 [K]                                     -75.98490880 [Eh]
+
+  Enthalpy, H_trans = E_trans + k_B * T = E_trans + P * V
+    Electronic contrib to H beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to H               1.481 [kcal/mol]        6.197 [kJ/mol]       0.00236046 [Eh]
+    Rotational contrib to H                  0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational contrib to H                14.420 [kcal/mol]       60.332 [kJ/mol]       0.02297930 [Eh]
+  Correction H                              16.790 [kcal/mol]       70.248 [kJ/mol]       0.02675604 [Eh]
+  Total H, Enthalpy at  298.15 [K]                                                      -75.98396462 [Eh]
+  *** Absolute enthalpy, not an enthalpy of formation ***
+
+  Gibbs free energy, G = H - T * S
+    Electronic contrib to G beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to G              -8.837 [kcal/mol]      -36.975 [kJ/mol]      -0.01408304 [Eh]
+    Rotational contrib to G                 -2.205 [kcal/mol]       -9.225 [kJ/mol]      -0.00351350 [Eh]
+    Vibrational contrib to G                14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297792 [Eh]
+  Correction G                               3.377 [kcal/mol]       14.129 [kJ/mol]       0.00538138 [Eh]
+  Total G, Gibbs energy at  298.15 [K]                                                  -76.00533927 [Eh]
+  *** Absolute Gibbs energy, not a free energy of formation ***
+

@@ -1,6 +1,7 @@
 import pretty_midi
 
 import numpy as np
+import pandas as pd
 
 # def play_frequency(frequency, duration, velocity=100, instrument=0):
 #     """Plays a frequency on MIDI using pitch bends."""
@@ -53,10 +54,16 @@ import numpy as np
 # # Write out the MIDI data
 # cello_c_chord.write('cello-C-chord.mid')
 
+data = pd.read_csv("data.csv")
+
 molecule = pretty_midi.PrettyMIDI()
+
 molecule_instr = pretty_midi.Instrument(program = 102)
-print(pretty_midi.hz_to_note_number(440))
-a_note = pretty_midi.Note(velocity = 10, pitch = int(pretty_midi.hz_to_note_number(440)), start =0, end=100)
-molecule_instr.notes.append(a_note)
+
+note_num = pretty_midi.hz_to_note_number(440)
+note_num = int(note_num)
+
+note = pretty_midi.Note(velocity = 10, pitch = note_num, start=0, end=100)
+molecule_instr.notes.append(note)
 molecule.instruments.append(molecule_instr)
 molecule.write("GOBLIn.mid")
