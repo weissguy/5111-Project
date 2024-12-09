@@ -7,9 +7,7 @@ import csv
 import os
 
 
-#chem_names = [input("Chemical name: ").lower()]
-chem_names = ['water']
-#chem_names = ['water', 'benzene', 'boron trifluoride', 'dopamine']
+chem_names = ['water', 'benzene', 'boron trifluoride', 'dopamine']
 
 # convert to xyz
 def smiles_to_xyz(smiles):
@@ -25,6 +23,7 @@ def smiles_to_xyz(smiles):
         xyz += f"{atom.GetSymbol()} {pos.x:.6f} {pos.y:.6f} {pos.z:.6f}\n"
     return xyz
 
+
 data = []
 
 for chem_name in chem_names:
@@ -33,11 +32,11 @@ for chem_name in chem_names:
     smiles = pubchempy.get_compounds(chem_name, "name")[0].isomeric_smiles
 
     # convert to mol
-    #pubchem_mol = Chem.MolFromSmiles(smiles)
-    #mol_filepath = f"mol_files/{chem_name}.mol"
-    #Chem.MolToMolFile(pubchem_mol, mol_filepath)
+    pubchem_mol = Chem.MolFromSmiles(smiles)
+    mol_filepath = f"mol_files/{chem_name}.mol"
+    Chem.MolToMolFile(pubchem_mol, mol_filepath)
 
-
+    # convert to xyz
     xyz = smiles_to_xyz(smiles)
 
     atom_names = re.findall(r'^[A-Za-z]+', xyz, re.MULTILINE)
@@ -70,7 +69,6 @@ for chem_name in chem_names:
     for i, freq in enumerate(frequencies):
         atom = atom_names[i]
         data.append({'atom': atom, 'frequency': freq})
-
 
     with open(f'{chem_name}.csv', 'w', newline='') as file:
         cols = ['atom', 'frequency']
