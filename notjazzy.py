@@ -1,5 +1,3 @@
-import pymol
-from pymol import cmd
 import rdkit
 from rdkit import Chem
 from rdkit.Chem import Draw
