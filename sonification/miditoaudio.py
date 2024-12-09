@@ -48,7 +48,7 @@ def to_audio(sf2, midi_file, out_dir, out_type='wav', txt_file=None, append=True
 
     subprocess.call(['fluidsynth', '-T', out_type, '-F', out_file, '-ni', sf2, midi_file])
 
-to_audio("creativelabs.sf2", "piano.mid", "mid_files")
+to_audio("sonification/creativelabs.sf2", "sonification/mid_files/MIDI_sample.mid", "sonification/wav_files")
 
 # def main():
 #     """

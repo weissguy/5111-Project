@@ -1,0 +1,1303 @@
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:05 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.47440586622344   -7.54744e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.93449658744089   -4.60091e-01   2.14675e-02 DIIS/ADIIS
+   @DF-RHF iter   2:   -75.98668212043646   -5.21855e-02   1.29784e-02 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.00660652596453   -1.99244e-02   1.48307e-03 DIIS/ADIIS
+   @DF-RHF iter   4:   -76.00712145407208   -5.14928e-04   2.94171e-04 DIIS/ADIIS
+   @DF-RHF iter   5:   -76.00714609092137   -2.46368e-05   5.29491e-05 DIIS
+   @DF-RHF iter   6:   -76.00714723166558   -1.14074e-06   7.86140e-06 DIIS
+   @DF-RHF iter   7:   -76.00714725945430   -2.77887e-08   1.43713e-06 DIIS
+   @DF-RHF iter   8:   -76.00714726049080   -1.03650e-09   3.10369e-07 DIIS
+   @DF-RHF iter   9:   -76.00714726054191   -5.11164e-11   4.49578e-08 DIIS
+   @DF-RHF iter  10:   -76.00714726054258   -6.67910e-13   5.17956e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.00714726054258
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              8.8880683614469191
+    One-Electron Energy =                -122.5061844987224475
+    Two-Electron Energy =                  37.6109688767329544
+    Total Energy =                        -76.0071472605425811
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0027210           -0.0223094           -0.0195884
+ Dipole Y            :          0.1230227           -1.0087829           -0.8857602
+ Dipole Z            :         -0.0000000            0.0000000           -0.0000000
+ Magnitude           :                                                    0.8859768
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:28 2024
+Module time:
+	user time   =       0.60 seconds =       0.01 minutes
+	system time =       0.10 seconds =       0.00 minutes
+	total time  =         23 seconds =       0.38 minutes
+Total time:
+	user time   =       0.60 seconds =       0.01 minutes
+	system time =       0.10 seconds =       0.00 minutes
+	total time  =         23 seconds =       0.38 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:28 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.001499939089     0.067824106403     0.000000000000    15.994914619570
+         H           -0.794748060911    -0.520896893597     0.000000000000     1.007825032230
+         H            0.770942939089    -0.555520893597     0.000000000000     1.007825032230
+
+  Nuclear repulsion =    8.888068361446919
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.001117011076     0.050482425537     0.000000000000
+       2       -0.034186746278    -0.024497777866     0.000000000000
+       3        0.033069735202    -0.025984647671    -0.000000000000
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:28 2024
+Module time:
+	user time   =       0.03 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.64 seconds =       0.01 minutes
+	system time =       0.10 seconds =       0.00 minutes
+	total time  =         23 seconds =       0.38 minutes
+
+			-----------------------------------------
+			 OPTKING 2.0: for geometry optimizations 
+			  - R.A. King,  Bethel University        
+			-----------------------------------------
+
+	Internal coordinates to be generated automatically.
+	Detected frag 1 with atoms:  1 2 3
+	---Fragment 1 Bond Connectivity---
+	 1 : 2 3
+	 2 : 1
+	 3 : 1
+
+	---Fragment 1 Geometry and Gradient---
+	 O           0.0028344741        0.1281689858        0.0000000000
+	 H          -1.5018561739       -0.9843524685        0.0000000000
+	 H           1.4568710132       -1.0497823459        0.0000000000
+	             0.0011170111        0.0504824255        0.0000000000
+	            -0.0341867463       -0.0244977779        0.0000000000
+	             0.0330697352       -0.0259846477       -0.0000000000
+
+	Previous optimization step data not found.  Starting new optimization.
+
+	---Fragment 1 Intrafragment Coordinates---
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.871309	       0.990254
+	 R(1,3)           =         1.871307	       0.990253
+	 B(2,1,3)         =         1.824046	     104.510135
+
+	Current energy   :       -76.0071472605
+
+	Generating empirical Hessian (Schlegel '84) for each fragment.
+	Taking RFO optimization step.
+	Going to follow RFO solution 1.
+	Using RFO vector 1.
+	Norm of target step-size    0.11880
+	Projected energy change by RFO approximation:        -0.0029157116
+
+	Back-transformation to cartesian coordinates...
+	Successfully converged to displaced geometry.
+
+	--- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	 ---------------------------------------------------------------------------
+	   Coordinate                Previous        Force       Change         New 
+	   ----------                --------       ------       ------       ------
+	    1 R(1,2)          =      0.990254    -0.346466    -0.044374     0.945880
+	    2 R(1,3)          =      0.990253    -0.346459    -0.044373     0.945880
+	    3 B(2,1,3)        =    104.510135    -0.000089    -0.401923   104.108212
+	 ---------------------------------------------------------------------------
+	Successfully symmetrized geometry.
+
+  ==> Convergence Check <==
+
+  Measures of convergence in internal coordinates in au.
+  Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+  --------------------------------------------------------------------------------------------- ~
+   Step     Total Energy     Delta E     MAX Force     RMS Force      MAX Disp      RMS Disp    ~
+  --------------------------------------------------------------------------------------------- ~
+    Convergence Criteria    1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o  ~
+  --------------------------------------------------------------------------------------------- ~
+      1     -76.00714726   -7.60e+01      4.21e-02      3.43e-02 o    8.39e-02      6.86e-02 o  ~
+  ---------------------------------------------------------------------------------------------
+
+	Writing optimization data to binary file.
+	Structure for next step:
+	Cartesian Geometry (in Angstrom)
+	    O     0.0011378446   0.0514657302   0.0000000000
+	    H    -0.7574522010  -0.5135383412   0.0000000000
+	    H     0.7340091738  -0.5465210658   0.0000000000
+			--------------------------
+			 OPTKING Finished Execution 
+			--------------------------
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O            0.001439153451     0.065077988033     0.000000000000
+    H           -0.757150895142    -0.499926085607     0.000000000000
+    H            0.734310485517    -0.532908810254     0.000000000000
+
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:28 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+  Reading orbitals from file /tmp/psi4_output.default.26077.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -76.05602150871781   -7.60560e+01   5.10167e-03 
+   @DF-RHF iter   1:   -76.01053607157080    4.54854e-02   7.17407e-04 DIIS/ADIIS
+   @DF-RHF iter   2:   -76.01064495993700   -1.08888e-04   1.57417e-04 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.01065379199332   -8.83206e-06   5.37473e-05 DIIS
+   @DF-RHF iter   4:   -76.01065517357350   -1.38158e-06   1.13187e-05 DIIS
+   @DF-RHF iter   5:   -76.01065522579152   -5.22180e-08   5.26788e-06 DIIS
+   @DF-RHF iter   6:   -76.01065523193083   -6.13930e-09   9.33310e-07 DIIS
+   @DF-RHF iter   7:   -76.01065523226474   -3.33912e-10   1.37187e-07 DIIS
+   @DF-RHF iter   8:   -76.01065523227257   -7.83018e-12   1.85388e-08 DIIS
+   @DF-RHF iter   9:   -76.01065523227277   -1.98952e-13   1.70905e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01065523227277
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.3059985513890791
+    One-Electron Energy =                -123.2497783933482083
+    Two-Electron Energy =                  37.9331246096863595
+    Total Energy =                        -76.0106552322727680
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0020767           -0.0214053           -0.0193286
+ Dipole Y            :          0.0939072           -0.9679385           -0.8740313
+ Dipole Z            :         -0.0000000            0.0000000           -0.0000000
+ Magnitude           :                                                    0.8742450
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:28 2024
+Module time:
+	user time   =       0.26 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.96 seconds =       0.02 minutes
+	system time =       0.12 seconds =       0.00 minutes
+	total time  =         23 seconds =       0.38 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:28 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.001439153451     0.065077988033     0.000000000000    15.994914619570
+         H           -0.757150895142    -0.499926085607     0.000000000000     1.007825032230
+         H            0.734310485517    -0.532908810254     0.000000000000     1.007825032230
+
+  Nuclear repulsion =    9.305998551389079
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000031126900     0.001410560194     0.000000000000
+       2        0.003513630603    -0.000783300011    -0.000000000000
+       3       -0.003544757504    -0.000627260183    -0.000000000000
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:28 2024
+Module time:
+	user time   =       0.03 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.99 seconds =       0.02 minutes
+	system time =       0.12 seconds =       0.00 minutes
+	total time  =         23 seconds =       0.38 minutes
+
+			-----------------------------------------
+			 OPTKING 2.0: for geometry optimizations 
+			  - R.A. King,  Bethel University        
+			-----------------------------------------
+
+	Previous internal coordinate definitions found.
+	---Fragment 1 Geometry and Gradient---
+	 O           0.0027196059        0.1229795742        0.0000000000
+	 H          -1.4308078275       -0.9447233848        0.0000000000
+	 H           1.3876457087       -1.0070517012        0.0000000000
+	             0.0000311269        0.0014105602        0.0000000000
+	             0.0035136306       -0.0007833000       -0.0000000000
+	            -0.0035447575       -0.0006272602       -0.0000000000
+
+	---Fragment 1 Intrafragment Coordinates---
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.787454	       0.945880
+	 R(1,3)           =         1.787454	       0.945880
+	 B(2,1,3)         =         1.817031	     104.108212
+
+	Current energy   :       -76.0106552323
+
+	Energy change for the previous step:
+		Projected    :        -0.0029157116
+		Actual       :        -0.0035079717
+	Energy ratio indicates good step: Trust radius increased to 1.000e+00.
+
+
+	Performing BFGS update.
+	Previous computed or guess Hessian on step 1.
+	Steps to be used in Hessian update: 1
+	Taking RFO optimization step.
+	Going to follow RFO solution 1.
+	Using RFO vector 1.
+	Norm of target step-size    0.02884
+	Projected energy change by RFO approximation:        -0.0002155855
+
+	Back-transformation to cartesian coordinates...
+	Successfully converged to displaced geometry.
+
+	--- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	 ---------------------------------------------------------------------------
+	   Coordinate                Previous        Force       Change         New 
+	   ----------                --------       ------       ------       ------
+	    1 R(1,2)          =      0.945880     0.019361     0.001523     0.947403
+	    2 R(1,3)          =      0.945880     0.019360     0.001523     0.947403
+	    3 B(2,1,3)        =    104.108212     0.000371     1.635786   105.743998
+	 ---------------------------------------------------------------------------
+	Successfully symmetrized geometry.
+
+  ==> Convergence Check <==
+
+  Measures of convergence in internal coordinates in au.
+  Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+  ---------------------------------------------------------------------------------------------
+   Step     Total Energy     Delta E     MAX Force     RMS Force      MAX Disp      RMS Disp   
+  ---------------------------------------------------------------------------------------------
+    Convergence Criteria    1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+  ---------------------------------------------------------------------------------------------
+      2     -76.01065523   -3.51e-03      4.87e-03      3.41e-03 o    2.85e-02      1.66e-02 o  ~
+  ---------------------------------------------------------------------------------------------
+
+	Writing optimization data to binary file.
+	Structure for next step:
+	Cartesian Geometry (in Angstrom)
+	    O     0.0012949188   0.0585545827   0.0000000000
+	    H    -0.7665172610  -0.4964556650   0.0000000000
+	    H     0.7438210861  -0.5298558217   0.0000000000
+			--------------------------
+			 OPTKING Finished Execution 
+			--------------------------
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O            0.000000000000     0.000000000000     0.063998532285
+    H           -0.755353809687     0.000000000000    -0.507851577369
+    H            0.755353809687     0.000000000000    -0.507851572430
+
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:28 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+  Reading orbitals from file /tmp/psi4_output.default.26077.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -75.63457964240168   -7.56346e+01   2.51093e-02 
+   @DF-RHF iter   1:   -75.96939722797327   -3.34818e-01   1.43434e-02 DIIS/ADIIS
+   @DF-RHF iter   2:   -76.00016013221781   -3.07629e-02   8.23592e-03 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.00930262897275   -9.14250e-03   1.63227e-03 DIIS/ADIIS
+   @DF-RHF iter   4:   -76.01064566410113   -1.34304e-03   3.25187e-04 DIIS/ADIIS
+   @DF-RHF iter   5:   -76.01071574628710   -7.00822e-05   6.86639e-05 DIIS
+   @DF-RHF iter   6:   -76.01071877175588   -3.02547e-06   1.50705e-05 DIIS
+   @DF-RHF iter   7:   -76.01071889546792   -1.23712e-07   4.02891e-06 DIIS
+   @DF-RHF iter   8:   -76.01071890421257   -8.74465e-09   6.23975e-07 DIIS
+   @DF-RHF iter   9:   -76.01071890441644   -2.03869e-10   1.23816e-07 DIIS
+   @DF-RHF iter  10:   -76.01071890442324   -6.80700e-12   1.61297e-08 DIIS
+   @DF-RHF iter  11:   -76.01071890442331   -7.10543e-14   2.18272e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01071890442331
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2871758462836258
+    One-Electron Energy =                -123.2224767690304645
+    Two-Electron Energy =                  37.9245820183235054
+    Total Energy =                        -76.0107189044233280
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0883674           -0.9518832           -0.8635158
+ Magnitude           :                                                    0.8635158
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:29 2024
+Module time:
+	user time   =       0.31 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =       1.36 seconds =       0.02 minutes
+	system time =       0.13 seconds =       0.00 minutes
+	total time  =         24 seconds =       0.40 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:29 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000     0.000000000000     0.063998532285    15.994914619570
+         H           -0.755353809687     0.000000000000    -0.507851577369     1.007825032230
+         H            0.755353809687     0.000000000000    -0.507851572430     1.007825032230
+
+  Nuclear repulsion =    9.287175846283626
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000002973     0.000000000625    -0.000453376467
+       2       -0.000453881565     0.000000000056     0.000226687099
+       3        0.000453878592    -0.000000000680     0.000226689368
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:29 2024
+Module time:
+	user time   =       0.03 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       1.39 seconds =       0.02 minutes
+	system time =       0.13 seconds =       0.00 minutes
+	total time  =         24 seconds =       0.40 minutes
+
+			-----------------------------------------
+			 OPTKING 2.0: for geometry optimizations 
+			  - R.A. King,  Bethel University        
+			-----------------------------------------
+
+	Previous internal coordinate definitions found.
+	---Fragment 1 Geometry and Gradient---
+	 O           0.0000000000        0.0000000000        0.1209396985
+	 H          -1.4274118281        0.0000000000       -0.9597003936
+	 H           1.4274118281        0.0000000000       -0.9597003843
+	             0.0000000030        0.0000000006       -0.0004533765
+	            -0.0004538816        0.0000000001        0.0002266871
+	             0.0004538786       -0.0000000007        0.0002266894
+
+	---Fragment 1 Intrafragment Coordinates---
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.790332	       0.947403
+	 R(1,3)           =         1.790332	       0.947403
+	 B(2,1,3)         =         1.845581	     105.743998
+
+	Current energy   :       -76.0107189044
+
+	Energy change for the previous step:
+		Projected    :        -0.0002155855
+		Actual       :        -0.0000636722
+
+	Performing BFGS update.
+	Previous computed or guess Hessian on step 1.
+	Steps to be used in Hessian update: 2 1
+	Taking RFO optimization step.
+	Going to follow RFO solution 1.
+	Using RFO vector 1.
+	Norm of target step-size    0.00420
+	Projected energy change by RFO approximation:        -0.0000047046
+
+	Back-transformation to cartesian coordinates...
+	Successfully converged to displaced geometry.
+
+	--- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	 ---------------------------------------------------------------------------
+	   Coordinate                Previous        Force       Change         New 
+	   ----------                --------       ------       ------       ------
+	    1 R(1,2)          =      0.947403    -0.001854    -0.000110     0.947293
+	    2 R(1,3)          =      0.947403    -0.001854    -0.000110     0.947293
+	    3 B(2,1,3)        =    105.743998    -0.000062    -0.240303   105.503695
+	 ---------------------------------------------------------------------------
+	Successfully symmetrized geometry.
+
+  ==> Convergence Check <==
+
+  Measures of convergence in internal coordinates in au.
+  Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+  ---------------------------------------------------------------------------------------------
+   Step     Total Energy     Delta E     MAX Force     RMS Force      MAX Disp      RMS Disp   
+  ---------------------------------------------------------------------------------------------
+    Convergence Criteria    1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+  ---------------------------------------------------------------------------------------------
+      3     -76.01071890   -6.37e-05      8.14e-04      5.05e-04 o    4.19e-03      2.43e-03 o  ~
+  ---------------------------------------------------------------------------------------------
+
+	Writing optimization data to binary file.
+	Structure for next step:
+	Cartesian Geometry (in Angstrom)
+	    O    -0.0000000006   0.0000000000   0.0650092439
+	    H    -0.7540652629   0.0000000000  -0.5083569311
+	    H     0.7540652635   0.0000000000  -0.5083569266
+			--------------------------
+			 OPTKING Finished Execution 
+			--------------------------
+
+    Structure for next step:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O           -0.000000000101     0.000000000000     0.064168202823
+    H           -0.754065265411     0.000000000000    -0.509197974417
+    H            0.754065267006     0.000000000000    -0.509197969940
+
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:29 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+  Reading orbitals from file /tmp/psi4_output.default.26077.180.npy, no projection.
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   0:   -76.01081484121454   -7.60108e+01   6.14804e-05 
+   @DF-RHF iter   1:   -76.01072061080511    9.42304e-05   1.35726e-05 DIIS
+   @DF-RHF iter   2:   -76.01072064796404   -3.71589e-08   5.82886e-06 DIIS
+   @DF-RHF iter   3:   -76.01072065484914   -6.88510e-09   2.42885e-06 DIIS
+   @DF-RHF iter   4:   -76.01072065676668   -1.91754e-09   3.81251e-07 DIIS
+   @DF-RHF iter   5:   -76.01072065685281   -8.61320e-11   2.96740e-08 DIIS
+   @DF-RHF iter   6:   -76.01072065685321   -3.97904e-13   2.46223e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065685321
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888137100900234
+    One-Electron Energy =                -123.2245054567906948
+    Two-Electron Energy =                  37.9249710898474461
+    Total Energy =                        -76.0107206568532234
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Z            :          0.0892631           -0.9544068           -0.8651437
+ Magnitude           :                                                    0.8651437
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:29 2024
+Module time:
+	user time   =       0.21 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       1.66 seconds =       0.03 minutes
+	system time =       0.14 seconds =       0.00 minutes
+	total time  =         24 seconds =       0.40 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:29 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000101     0.000000000000     0.064168202823    15.994914619570
+         H           -0.754065265411     0.000000000000    -0.509197974417     1.007825032230
+         H            0.754065267006     0.000000000000    -0.509197969940     1.007825032230
+
+  Nuclear repulsion =    9.288813710090023
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001223     0.000000000001    -0.000024989428
+       2        0.000015792372     0.000000000000     0.000012494252
+       3       -0.000015793595    -0.000000000001     0.000012495176
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:29 2024
+Module time:
+	user time   =       0.03 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       1.69 seconds =       0.03 minutes
+	system time =       0.15 seconds =       0.00 minutes
+	total time  =         24 seconds =       0.40 minutes
+
+			-----------------------------------------
+			 OPTKING 2.0: for geometry optimizations 
+			  - R.A. King,  Bethel University        
+			-----------------------------------------
+
+	Previous internal coordinate definitions found.
+	---Fragment 1 Geometry and Gradient---
+	 O          -0.0000000002        0.0000000000        0.1212603293
+	 H          -1.4249768323        0.0000000000       -0.9622447153
+	 H           1.4249768354        0.0000000000       -0.9622447068
+	             0.0000000012        0.0000000000       -0.0000249894
+	             0.0000157924        0.0000000000        0.0000124943
+	            -0.0000157936       -0.0000000000        0.0000124952
+
+	---Fragment 1 Intrafragment Coordinates---
+	 - Coordinate -           - BOHR/RAD -       - ANG/DEG -
+	 R(1,2)           =         1.790124	       0.947293
+	 R(1,3)           =         1.790123	       0.947293
+	 B(2,1,3)         =         1.841387	     105.503695
+
+	Current energy   :       -76.0107206569
+
+	Energy change for the previous step:
+		Projected    :        -0.0000047046
+		Actual       :        -0.0000017524
+
+	Performing BFGS update.
+	Previous computed or guess Hessian on step 1.
+	Steps to be used in Hessian update: 3 2
+	Taking RFO optimization step.
+	Going to follow RFO solution 1.
+	Using RFO vector 1.
+	Norm of target step-size    0.00006
+	Projected energy change by RFO approximation:        -0.0000000016
+
+	Back-transformation to cartesian coordinates...
+	Successfully converged to displaced geometry.
+
+	--- Internal Coordinate Step in ANG or DEG, aJ/ANG or AJ/DEG ---
+	 ---------------------------------------------------------------------------
+	   Coordinate                Previous        Force       Change         New 
+	   ----------                --------       ------       ------       ------
+	    1 R(1,2)          =      0.947293     0.000166     0.000021     0.947313
+	    2 R(1,3)          =      0.947293     0.000166     0.000021     0.947313
+	    3 B(2,1,3)        =    105.503695    -0.000000    -0.001056   105.502639
+	 ---------------------------------------------------------------------------
+	Successfully symmetrized geometry.
+
+  ==> Convergence Check <==
+
+  Measures of convergence in internal coordinates in au.
+  Criteria marked as inactive (o), active & met (*), and active & unmet ( ).
+  ---------------------------------------------------------------------------------------------
+   Step     Total Energy     Delta E     MAX Force     RMS Force      MAX Disp      RMS Disp   
+  ---------------------------------------------------------------------------------------------
+    Convergence Criteria    1.00e-06 *    3.00e-04 *             o    1.20e-03 *             o
+  ---------------------------------------------------------------------------------------------
+      4     -76.01072066   -1.75e-06      2.01e-05 *    1.64e-05 o    3.87e-05 *    3.34e-05 o  ~
+  ---------------------------------------------------------------------------------------------
+
+
+  **** Optimization is complete! (in 4 steps) ****
+
+  ==> Optimization Summary <==
+
+  Measures of convergence in internal coordinates in au.
+  --------------------------------------------------------------------------------------------------------------- ~
+   Step         Total Energy             Delta E       MAX Force       RMS Force        MAX Disp        RMS Disp  ~
+  --------------------------------------------------------------------------------------------------------------- ~
+      1     -76.007147260543    -76.007147260543      0.04205333      0.03434275      0.08385551      0.06858667  ~
+      2     -76.010655232273     -0.003507971730      0.00487440      0.00340610      0.02854986      0.01664992  ~
+      3     -76.010718904423     -0.000063672151      0.00081406      0.00050464      0.00419407      0.00242741  ~
+      4     -76.010720656853     -0.000001752430      0.00002013      0.00001644      0.00003874      0.00003338  ~
+  --------------------------------------------------------------------------------------------------------------- ~
+
+	Writing optimization data to binary file.
+	Final energy is    -76.0107206568532
+	Final (previous) structure:
+	Cartesian Geometry (in Angstrom)
+	    O    -0.0000000001   0.0000000000   0.0641682026
+	    H    -0.7540652624   0.0000000000  -0.5091979724
+	    H     0.7540652640   0.0000000000  -0.5091979679
+	Saving final (previous) structure.
+	Cleaning optimization helper files.
+			--------------------------
+			 OPTKING Finished Execution 
+			--------------------------
+
+    Final optimized geometry and variables:
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O           -0.000000000101     0.000000000000     0.064168202823
+    H           -0.754065265411     0.000000000000    -0.509197974417
+    H            0.754065267006     0.000000000000    -0.509197969940
+
+	Removing binary optimization data file.
+	Cleaning optimization helper files.
+
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:29 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864391958129   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078955450456   -4.02146e-01   2.14810e-02 DIIS/ADIIS
+   @DF-RHF iter   2:   -75.99236534748161   -5.15758e-02   1.23472e-02 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.01026636379142   -1.79010e-02   1.40921e-03 DIIS/ADIIS
+   @DF-RHF iter   4:   -76.01070239754107   -4.36034e-04   2.50069e-04 DIIS/ADIIS
+   @DF-RHF iter   5:   -76.01071975318294   -1.73556e-05   4.64148e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063233943   -8.79156e-07   7.27382e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065621980   -2.38804e-08   1.14958e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065682361   -6.03805e-10   2.44649e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065685278   -2.91749e-11   3.39506e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065685317   -3.83693e-13   4.01339e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065685317
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888137100900234
+    One-Electron Energy =                -123.2245054810206568
+    Two-Electron Energy =                  37.9249711140774721
+    Total Energy =                        -76.0107206568531524
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0892630           -0.9544068           -0.8651437
+ Magnitude           :                                                    0.8651437
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:30 2024
+Module time:
+	user time   =       0.38 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =       2.17 seconds =       0.04 minutes
+	system time =       0.16 seconds =       0.00 minutes
+	total time  =         25 seconds =       0.42 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:30 2024
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000101     0.000000000000     0.064168202823    15.994914619570
+         H           -0.754065265411     0.000000000000    -0.509197974417     1.007825032230
+         H            0.754065267006     0.000000000000    -0.509197969940     1.007825032230
+
+  Nuclear repulsion =    9.288813710090023
+
+  ==> Basis Set <==
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000000001216    -0.000000000000    -0.000024988084
+       2        0.000015791809    -0.000000000000     0.000012493583
+       3       -0.000015793025     0.000000000000     0.000012494501
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:30 2024
+Module time:
+	user time   =       0.03 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       2.20 seconds =       0.04 minutes
+	system time =       0.17 seconds =       0.00 minutes
+	total time  =         25 seconds =       0.42 minutes
+
+  Based on options and gradient (rms=1.26E-05), recommend projecting translations and projecting rotations.
+hessian() will perform analytic frequency computation.
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:30 2024
+
+   => Loading Basis Set <=
+
+    Name: 6-31G(D)
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   145 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+    atoms 2-3 entry H          line    44 file /opt/anaconda3/envs/psi4env/share/psi4/basis/6-31g_d_.gbs 
+
+   => Loading Basis Set <=
+
+    Name: (6-31G(D) AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4env/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.366 GiB. Using in-core AOs.
+
+
+  ==> Pre-Iterations <==
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -75.53864391958129   -7.55386e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.94078955450456   -4.02146e-01   2.14810e-02 DIIS/ADIIS
+   @DF-RHF iter   2:   -75.99236534748161   -5.15758e-02   1.23472e-02 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.01026636379142   -1.79010e-02   1.40921e-03 DIIS/ADIIS
+   @DF-RHF iter   4:   -76.01070239754107   -4.36034e-04   2.50069e-04 DIIS/ADIIS
+   @DF-RHF iter   5:   -76.01071975318294   -1.73556e-05   4.64148e-05 DIIS
+   @DF-RHF iter   6:   -76.01072063233943   -8.79156e-07   7.27382e-06 DIIS
+   @DF-RHF iter   7:   -76.01072065621980   -2.38804e-08   1.14958e-06 DIIS
+   @DF-RHF iter   8:   -76.01072065682361   -6.03805e-10   2.44649e-07 DIIS
+   @DF-RHF iter   9:   -76.01072065685278   -2.91749e-11   3.39506e-08 DIIS
+   @DF-RHF iter  10:   -76.01072065685317   -3.83693e-13   4.01339e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+  @DF-RHF Final Energy:   -76.01072065685317
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2888137100900234
+    One-Electron Energy =                -123.2245054810206568
+    Two-Electron Energy =                  37.9249711140774721
+    Total Energy =                        -76.0107206568531524
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0892630           -0.9544068           -0.8651437
+ Magnitude           :                                                    0.8651437
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:30 2024
+Module time:
+	user time   =       0.38 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       2.60 seconds =       0.04 minutes
+	system time =       0.18 seconds =       0.00 minutes
+	total time  =         25 seconds =       0.42 minutes
+
+*** tstart() called on dhcp-10-29-171-83.dyn.MIT.EDU
+*** at Mon Dec  9 16:25:30 2024
+
+
+         ------------------------------------------------------------
+                                   SCF HESS                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O           -0.000000000101     0.000000000000     0.064168202823    15.994914619570
+         H           -0.754065265411     0.000000000000    -0.509197974417     1.007825032230
+         H            0.754065267006     0.000000000000    -0.509197969940     1.007825032230
+
+  Nuclear repulsion =    9.288813710090023
+
+  ==> Basis Set <==
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.439 GiB. Using in-core AOs.
+
+  ## Total Hessian (Symmetry 0) ##
+  Irrep: 1 Size: 9 x 9
+
+                 1                   2                   3                   4                   5
+
+    1     0.78541001352006     0.00000000000000    -0.00000000241562    -0.39270500387925    -0.00000000000000
+    2     0.00000000000000    -0.00002306074226     0.00000000000000    -0.00000000000000     0.00001152995436
+    3    -0.00000000241562     0.00000000000000     0.53425106507388    -0.22592401031689    -0.00000000000000
+    4    -0.39270500387925    -0.00000000000000    -0.22592401031689     0.42557623751705     0.00000000000000
+    5    -0.00000000000000     0.00001152995436    -0.00000000000000     0.00000000000000    -0.00001130539586
+    6    -0.29860860584977    -0.00000000000000    -0.26712553304796     0.26226630823454     0.00000000000000
+    7    -0.39270500967427    -0.00000000000000     0.22592401272424    -0.03287123361750     0.00000000000000
+    8    -0.00000000000000     0.00001153079295     0.00000000000000     0.00000000000000    -0.00000022456223
+    9     0.29860860825939     0.00000000000000    -0.26712553203702    -0.03634229793270    -0.00000000000000
+
+                 6                   7                   8                   9
+
+    1    -0.29860860584977    -0.39270500967427    -0.00000000000000     0.29860860825939
+    2    -0.00000000000000    -0.00000000000000     0.00001153079295     0.00000000000000
+    3    -0.26712553304796     0.22592401272424     0.00000000000000    -0.26712553203702
+    4     0.26226630823454    -0.03287123361750     0.00000000000000    -0.03634229793270
+    5     0.00000000000000     0.00000000000000    -0.00000022456223    -0.00000000000000
+    6     0.24708325794801     0.03634229759747     0.00000000000000     0.02004227508136
+    7     0.03634229759747     0.42557624323203    -0.00000000000000    -0.26226631031400
+    8     0.00000000000000    -0.00000000000000    -0.00001130623024    -0.00000000000000
+    9     0.02004227508136    -0.26226631031400    -0.00000000000000     0.24708325694297
+
+
+
+
+*** tstop() called on dhcp-10-29-171-83.dyn.MIT.EDU at Mon Dec  9 16:25:30 2024
+Module time:
+	user time   =       0.26 seconds =       0.00 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       2.86 seconds =       0.05 minutes
+	system time =       0.20 seconds =       0.00 minutes
+	total time  =         25 seconds =       0.42 minutes
+
+
+  ==> Harmonic Vibrational Analysis <==
+
+  non-mass-weighted Hessian:       Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  projection of translations (True) and rotations (True) removed 6 degrees of freedom (6)
+  total projector:                 Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  mass-weighted Hessian:           Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0016  [cm^-1]
+  pre-proj  all modes:['18.4504i' '17.5347i' '17.0454i' '0.0107i' '0.0074i' '0.0016' '1826.6105'
+ '4070.6546' '4188.9434']
+  projected mass-weighted Hessian: Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  post-proj low-frequency mode:    0.0001i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj  all modes:['0.0001i' '0.0000i' '0.0000i' '0.0000i' '0.0000' '0.0000' '1826.6105'
+ '4070.6546' '4188.9434']
+
+  Vibration                       7                   8                   9           
+  Freq [cm^-1]                1826.6105           4070.6546           4188.9434       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.0823              1.0455              1.0829        
+  Force const [mDyne/A]         2.1276             10.2073             11.1951        
+  Turning point v=0 [a0]        0.2468              0.1682              0.1629        
+  RMS dev v=0 [a0 u^1/2]        0.1815              0.1216              0.1199        
+  IR activ [km/mol]            107.2841            18.2225             58.1722        
+  Char temp [K]               2628.0858           5856.7656           6026.9570       
+  ----------------------------------------------------------------------------------
+      1   O                0.00 -0.00 -0.07   -0.00 -0.00 -0.05   -0.07  0.00  0.00   
+      2   H               -0.43  0.00  0.56    0.58  0.00  0.40    0.56  0.00  0.43   
+      3   H                0.43 -0.00  0.56   -0.58 -0.00  0.40    0.56 -0.00 -0.43   
+
+  ==> Thermochemistry Components <==
+
+  Entropy, S
+    Electronic S            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K] (multiplicity = 1)
+    Translational S        34.608 [cal/(mol K)]      144.801 [J/(mol K)]       0.05515177 [mEh/K] (mol. weight = 18.0106 [u], P = 101325.00 [Pa])
+    Rotational S           10.376 [cal/(mol K)]       43.411 [J/(mol K)]       0.01653455 [mEh/K] (symmetry no. = 2)
+    Vibrational S           0.003 [cal/(mol K)]        0.012 [J/(mol K)]       0.00000462 [mEh/K]
+  Total S                  44.987 [cal/(mol K)]      188.225 [J/(mol K)]       0.07169094 [mEh/K]
+  Correction S              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant volume heat capacity, Cv
+    Electronic Cv           0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cv        2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Rotational Cv           2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cv          0.023 [cal/(mol K)]        0.096 [J/(mol K)]       0.00003657 [mEh/K]
+  Total Cv                  5.985 [cal/(mol K)]       25.039 [J/(mol K)]       0.00953700 [mEh/K]
+  Correction Cv             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant pressure heat capacity, Cp
+    Electronic Cp           0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cp        4.968 [cal/(mol K)]       20.786 [J/(mol K)]       0.00791703 [mEh/K]
+    Rotational Cp           2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cp          0.023 [cal/(mol K)]        0.096 [J/(mol K)]       0.00003657 [mEh/K]
+  Total Cp                  7.972 [cal/(mol K)]       33.354 [J/(mol K)]       0.01270381 [mEh/K]
+  Correction Cp             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  ==> Thermochemistry Energy Analysis <==
+
+  Raw electronic energy, E0
+  Total E0, Electronic energy at well bottom at 0 [K]                  -76.01072066 [Eh]
+
+  Zero-point energy, ZPE_vib = Sum_i nu_i / 2
+    Electronic ZPE          0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational ZPE       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Rotational ZPE          0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Vibrational ZPE        14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297807 [Eh]        5043.104 [cm^-1]
+  Correction ZPE           14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297807 [Eh]        5043.104 [cm^-1]
+  Total ZPE, Electronic energy at 0 [K]                                -75.98774258 [Eh]
+
+  Thermal Energy, E (includes ZPE)
+    Electronic E            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational E         0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Rotational E            0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational E          14.420 [kcal/mol]       60.332 [kJ/mol]       0.02297931 [Eh]
+  Correction E             16.197 [kcal/mol]       67.769 [kJ/mol]       0.02581186 [Eh]
+  Total E, Electronic energy at  298.15 [K]                            -75.98490879 [Eh]
+
+  Enthalpy, H_trans = E_trans + k_B * T
+    Electronic H            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational H         1.481 [kcal/mol]        6.197 [kJ/mol]       0.00236046 [Eh]
+    Rotational H            0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational H          14.420 [kcal/mol]       60.332 [kJ/mol]       0.02297931 [Eh]
+  Correction H             16.790 [kcal/mol]       70.248 [kJ/mol]       0.02675605 [Eh]
+  Total H, Enthalpy at  298.15 [K]                                     -75.98396461 [Eh]
+
+  Gibbs free energy, G = H - T * S
+    Electronic G            0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational G        -8.837 [kcal/mol]      -36.975 [kJ/mol]      -0.01408304 [Eh]
+    Rotational G           -2.205 [kcal/mol]       -9.225 [kJ/mol]      -0.00351350 [Eh]
+    Vibrational G          14.419 [kcal/mol]       60.329 [kJ/mol]       0.02297793 [Eh]
+  Correction G              3.377 [kcal/mol]       14.129 [kJ/mol]       0.00538139 [Eh]
+  Total G, Free enthalpy at  298.15 [K]                                -76.00533926 [Eh]
