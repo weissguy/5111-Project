@@ -2,9 +2,8 @@ from rdkit import Chem
 from rdkit.Chem import AllChem
 import pubchempy
 import psi4
-import re
+import numpy as np
 import csv
-import os
 
 
 chem_names = ['water', 'hydrogen', 'carbon dioxide'] # dopamine
@@ -64,6 +63,7 @@ for chem_name in chem_names:
     # analyze vibrational energy
     energy, wfn = psi4.frequency('scf/6-31G(d)', molecule=psi4_mol, return_wfn = True)
     frequencies = wfn.frequencies().to_array().tolist() # in cm^-1
+    frequencies = np.unique(frequencies).tolist()
 
     data.append({'molecule': chem_name, 'frequencies': frequencies})
 
