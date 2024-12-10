@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify, send_file
 from atomic_sound import make_sound
 import os
-from png_gen import create_visualisation
+from atomic_image import create_visualisation
 
 
 app = Flask(__name__)
