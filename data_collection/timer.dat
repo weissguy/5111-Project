@@ -1007,3 +1007,128 @@ Grad: JK                            :      0.000u      0.000s      4.581w     46
 Grad: XC                            :      0.000u      0.000s      0.000w     46 calls
 
 **************************************************************************************
+
+Host: LaComputadora
+
+Timers On : Tue Dec 10 18:24:29 2024
+Timers Off: Tue Dec 10 18:24:29 2024
+
+Wall Time:        0.88 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: LaComputadora
+
+Timers On : Tue Dec 10 18:24:51 2024
+Timers Off: Tue Dec 10 18:24:52 2024
+
+Wall Time:        0.97 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: LaComputadora
+
+Timers On : Tue Dec 10 18:25:06 2024
+Timers Off: Tue Dec 10 18:25:08 2024
+
+Wall Time:        1.77 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: LaComputadora
+
+Timers On : Tue Dec 10 18:24:57 2024
+Timers Off: Tue Dec 10 18:25:56 2024
+
+Wall Time:       59.31 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+DFH: sparsity prep                  :      0.000u      0.000s      0.453w     35 calls
+Libint2ERI::Libint2ERI              :      0.000u      0.000s      0.941w    245 calls
+DFH: initialize()                   :      0.000u      0.000s      3.958w     35 calls
+DFH: AO Construction                :      0.000u      0.000s      0.637w     35 calls
+DFH: AO-Met. Contraction            :      0.000u      0.000s      0.409w     35 calls
+HF: Form core H                     :      0.000u      0.000s      0.873w     35 calls
+HF: Form S/X                        :      0.000u      0.000s      0.033w     35 calls
+HF: Guess                           :      0.000u      0.000s      4.096w     35 calls
+SAD Guess                           :      0.000u      0.000s      4.040w     32 calls
+HF: Form G                          :      0.000u      0.000s      0.933w    346 calls
+JK: D                               :      0.000u      0.000s      0.009w    346 calls
+JK: USO2AO                          :      0.000u      0.000s      0.002w    346 calls
+JK: JK                              :      0.000u      0.000s      0.898w    346 calls
+DFH: compute_JK()                   :      0.000u      0.000s      0.894w    346 calls
+DFH: Grabbing AOs                   :      0.000u      0.000s      0.000w    346 calls
+DFH: compute_J                      :      0.000u      0.000s      0.238w    346 calls
+DFH: compute_K                      :      0.000u      0.000s      0.558w    346 calls
+JK: AO2USO                          :      0.000u      0.000s      0.000w    346 calls
+HF: Form F                          :      0.000u      0.000s      0.011w    346 calls
+HF: Form D                          :      0.000u      0.000s      0.008w    346 calls
+HF: DIIS                            :      0.000u      0.000s      4.831w    314 calls
+HF: Form C                          :      0.000u      0.000s      0.525w    314 calls
+Grad: V T Perturb                   :      0.000u      0.000s      0.066w     35 calls
+Grad: S                             :      0.000u      0.000s      0.013w     35 calls
+Grad: JK                            :      0.000u      0.000s      6.024w     35 calls
+JKGrad: Amn                         :      0.000u      0.000s      2.107w     35 calls
+JKGrad: Awmn                        :      0.000u      0.000s      0.000w     35 calls
+JKGrad: AB                          :      0.000u      0.000s      1.100w     35 calls
+JKGrad: UV                          :      0.000u      0.000s      0.063w     35 calls
+JKGrad: ABx                         :      0.000u      0.000s      0.279w     35 calls
+JKGrad: Amnx                        :      0.000u      0.000s      2.090w     35 calls
+Grad: XC                            :      0.000u      0.000s      0.000w     35 calls
+
+--------------------------------------------------------------------------------------
+DFH: sparsity prep                  :      0.000u      0.000s      0.453w     35 calls
+| Libint2ERI::Libint2ERI            :      0.000u      0.000s      0.346w     35 calls
+DFH: initialize()                   :      0.000u      0.000s      3.958w     35 calls
+| Libint2ERI::Libint2ERI            :      0.000u      0.000s      0.188w     70 calls
+| DFH: AO Construction              :      0.000u      0.000s      0.637w     35 calls
+| DFH: AO-Met. Contraction          :      0.000u      0.000s      0.409w     35 calls
+HF: Form core H                     :      0.000u      0.000s      0.873w     35 calls
+HF: Form S/X                        :      0.000u      0.000s      0.033w     35 calls
+HF: Guess                           :      0.000u      0.000s      4.096w     35 calls
+| SAD Guess                         :      0.000u      0.000s      4.040w     32 calls
+HF: Form G                          :      0.000u      0.000s      0.933w    346 calls
+| JK: D                             :      0.000u      0.000s      0.009w    346 calls
+| JK: USO2AO                        :      0.000u      0.000s      0.002w    346 calls
+| JK: JK                            :      0.000u      0.000s      0.898w    346 calls
+| | DFH: compute_JK()               :      0.000u      0.000s      0.894w    346 calls
+| | | DFH: Grabbing AOs             :      0.000u      0.000s      0.000w    346 calls
+| | | DFH: compute_J                :      0.000u      0.000s      0.238w    346 calls
+| | | DFH: compute_K                :      0.000u      0.000s      0.558w    346 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.000w    346 calls
+HF: Form F                          :      0.000u      0.000s      0.011w    346 calls
+HF: Form D                          :      0.000u      0.000s      0.008w    346 calls
+HF: DIIS                            :      0.000u      0.000s      4.831w    314 calls
+HF: Form C                          :      0.000u      0.000s      0.525w    314 calls
+Grad: V T Perturb                   :      0.000u      0.000s      0.066w     35 calls
+Grad: S                             :      0.000u      0.000s      0.013w     35 calls
+Grad: JK                            :      0.000u      0.000s      6.024w     35 calls
+| JKGrad: Amn                       :      0.000u      0.000s      2.107w     35 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.179w     35 calls
+| JKGrad: Awmn                      :      0.000u      0.000s      0.000w     35 calls
+| JKGrad: AB                        :      0.000u      0.000s      1.100w     35 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.005w     35 calls
+| JKGrad: UV                        :      0.000u      0.000s      0.063w     35 calls
+| JKGrad: ABx                       :      0.000u      0.000s      0.279w     35 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.006w     35 calls
+| JKGrad: Amnx                      :      0.000u      0.000s      2.090w     35 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.217w     35 calls
+Grad: XC                            :      0.000u      0.000s      0.000w     35 calls
+
+**************************************************************************************
