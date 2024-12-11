@@ -56,14 +56,14 @@ document.getElementById('play-btn').addEventListener('click', () => {
     }
 
     // Construct the image path
-    const imagePath = `/static/gifs/${selectedMolecule}_${selectedVersion}.gif`; // Adjust according to your file names
-    //const imagePath = `/static/pngs/${selectedMolecule}.png`
+    const imagePath = `./static/gifs/${selectedMolecule}_${selectedVersion}.gif`; // Adjust according to your file names
+    //const imagePath = `./static/pngs/${selectedMolecule}.png`
     const imageElement = document.getElementById('molecule-image');
     imageElement.src = imagePath;
     imageElement.style.display = 'block';
 
     // Construct the audio file path based on selected molecule and version
-    const audioPath = `/static/mp3_files/${selectedMolecule}_${selectedVersion}.mp3`;
+    const audioPath = `./static/mp3_files/${selectedMolecule}_${selectedVersion}.mp3`;
     console.log(`Playing audio from: ${audioPath}`);
 
     // Play the selected audio version
