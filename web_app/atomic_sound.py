@@ -49,7 +49,7 @@ def make_sound(mol_name, index):
     mol_sound.instruments.append(molecule_instr)
     #converting the midi file to wav and saving it
     mol_sound.write(f"web_app/sonification/mid_files/{mol_name}_{index}.mid")
-    to_audio("web_app/sonification/allinone.sf2", f"web_app/sonification/mid_files/{mol_name}_{index}.mid", "web_app/sonification/wav_files")
+    to_audio("arachno.sf2", f"web_app/sonification/mid_files/{mol_name}_{index}.mid", "web_app/sonification/wav_files")
 
     #applying filters
     low_pass = calc_filter(properties_map["donor_strength"], "low")
@@ -58,7 +58,7 @@ def make_sound(mol_name, index):
     sound = AudioSegment.from_file(f"web_app/sonification/wav_files/{mol_name}_{index}.wav")
     filtered_sound = low_pass_filter(sound, low_pass)  # Cutoff frequency in Hz
     filtered_sound = high_pass_filter(filtered_sound, high_pass)
-    filtered_sound.export(f"web_app/sonification/mp3_files/{mol_name}_{index}.mp3", format="mp3") 
+    filtered_sound.export(f"web_app/static/mp3_files/{mol_name}_{index}.mp3", format="mp3") 
 make_sound(mol_name, index)
 
 # 1 - honkytonk

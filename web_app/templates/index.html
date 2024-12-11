@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <h1>Vibrational Energy Quantum Tunneling Resonator (VEQTR)</h1>
+    <h1>Vibrational Energy Quantum Theoretical Resonator (VEQTR)</h1>
     <label for="cars">Choose a molecule:</label>
     <select name="molecule" id="molecule">
         <option value="h2o">Water</option>
@@ -16,6 +16,15 @@
         <option value="c2h4">Ethene</option>
     </select>
     <button id="submit-btn">Submit</button>
+
+    <div id="audio-selector" style="display:none;">
+        <label for="audio-version">Choose an audio version:</label>
+        <select id="audio-version">
+            <!-- Audio versions will be dynamically added here -->
+        </select>
+        <button id="play-btn">Play Audio</button>
+    </div>
+
     <div id="image-container">
         <img id="molecule-image" src="" alt="Molecule Image" style="display: none; width: 400px; height: auto;">
     </div>
