@@ -10,10 +10,10 @@ function updateAudioVersionOptions(molecule) {
     const audioVersionDropdown = document.getElementById('audio-version');
     // Clear existing options
     audioVersionDropdown.innerHTML = '';
-    
+
     // Get the list of available versions for the selected molecule
     const availableVersions = audioVersions[molecule] || [];
-    
+
     // Add new options to the dropdown
     availableVersions.forEach(version => {
         const option = document.createElement('option');
@@ -46,10 +46,10 @@ document.getElementById('submit-btn').addEventListener('click', () => {
 // Add event listener for the 'Play Audio' button
 document.getElementById('play-btn').addEventListener('click', () => {
     const selectedMolecule = sessionStorage.getItem('selectedMolecule');
-    
+
     // Get the selected version from the dropdown
     const selectedVersion = document.getElementById('audio-version').value;
-    
+
     if (!selectedMolecule) {
         alert('Please select a molecule first.');
         return;
@@ -79,10 +79,10 @@ document.getElementById('play-btn').addEventListener('click', () => {
 //     const audioVersionDropdown = document.getElementById('audio-version');
 //     // Clear existing options
 //     audioVersionDropdown.innerHTML = '';
-    
+
 //     // Get the list of available versions for the selected molecule
 //     const availableVersions = audioVersions[molecule] || [];
-    
+
 //     // Add new options to the dropdown
 //     availableVersions.forEach(version => {
 //         const option = document.createElement('option');
@@ -119,12 +119,10 @@ document.getElementById('play-btn').addEventListener('click', () => {
 //     console.log(audioPath);
 //     imageElement.src = imagePath;
 //     imageElement.style.display = 'block';
-    
+
 //     const audioElement = new Audio(audioPath);
 //     audioElement.load();
 //     audioElement.play().catch(error => {
 //         console.error('Error playing the audio:', error);
 //     });
 // });
-
-
