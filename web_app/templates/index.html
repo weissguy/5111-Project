@@ -10,23 +10,16 @@
     <h1>Vibrational Energy Quantum Tunneling Resonator (VEQTR)</h1>
     <label for="cars">Choose a molecule:</label>
     <select name="molecule" id="molecule">
-        <option value="water">Water</option>
-        <option value="benzene">Benzene</option>
-        <option value="boron trifluoride">Boron Trifluoride</option>
-        <option value="dopamine">Dopamine</option>
+        <option value="h2o">Water</option>
+        <option value="h2">Hydrogen</option>
+        <option value="co2">Carbon Dioxide</option>
+        <option value="c2h4">Ethene</option>
     </select>
     <button id="submit-btn">Submit</button>
-
-    <div id="visualization">
-        <h2>Generated Visualization:</h2>
-        <img id="molecule-image" src="" alt="Molecule Visualization" style="display:none; width: 400px; height: auto;">
+    <div id="image-container">
+        <img id="molecule-image" src="" alt="Molecule Image" style="display: none; width: 400px; height: auto;">
     </div>
-
     <div id="response"></div>
-
-    <div id="jsmol" style="width: 400px; height: 400px;"></div>
-
     <script src="../static/script.js"></script>
-    <script src="https://chemapps.stolaf.edu/jmol/jsmol.min.js"></script>
 </body>
 </html>

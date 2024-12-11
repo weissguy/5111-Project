@@ -74,5 +74,5 @@ def create_visualisation(molecule_name):
 # cmd.show("sticks")
 # cmd.set("stick_ball", 1)
 # cmd.set("stick_ball_ratio", 1.5)
-# cmd.zoom()           
+# cmd.zoom()
 # cmd.png("co2real.png")
