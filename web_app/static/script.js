@@ -8,7 +8,7 @@ document.getElementById('submit-btn').addEventListener('click', () => {
     }
 
     //const imagePath = `../static/pngs/${selectedMolecule}.png`
-    const imagePath = `../static/gifs/${selectedMolecule}_1.gif`
+    const imagePath = `../static/gifs/${selectedMolecule}_0.gif`
     const imageElement = document.getElementById('molecule-image');
     imageElement.src = imagePath;
     imageElement.style.display = 'block';
