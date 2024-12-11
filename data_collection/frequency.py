@@ -10,6 +10,8 @@ chem_names = ['water', 'hydrogen', 'carbon dioxide', 'ethene']
 
 atomic_nums = {'H': 1, 'C': 6, 'O': 8}
 
+c = 2.99792458e10
+
 # convert to xyz
 def smiles_to_xyz(smiles):
     mol = Chem.MolFromSmiles(smiles)
@@ -62,7 +64,9 @@ for chem_name in chem_names:
 
     # analyze vibrational energy
     energy, wfn = psi4.frequency('scf/6-31G(d)', molecule=psi4_mol, return_wfn = True)
-    frequencies = wfn.frequencies().to_array().tolist() # in cm^-1
+    frequencies = wfn.frequencies().to_array() # in cm^-1
+    #frequencies *= c # in Hz
+    frequencies = frequencies.tolist()
 
     print(frequencies)
 
