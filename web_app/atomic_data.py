@@ -25,14 +25,18 @@ def create_molecular_map(chem_name):
 def create_useful_dict(chem_name):
     mol_map = create_molecular_map(chem_name)
     useful_dict = {}
-    useful_dict["mass"] = Descriptors.MolWt(pubchempy.get_compounds(chem_name, "name")[0].isomeric_smiles)
+    useful_dict["mass"] = Descriptors.MolWt(Chem.MolFromSmiles(pubchempy.get_compounds(chem_name, "name")[0].isomeric_smiles))
     useful_dict["gibbs"] = gibbs(chem_name)
-    useful_dict["acceptor_strength"] = mol_map["sda"]
+    useful_dict["acceptor_strength"] = mol_map["sa"]
     useful_dict["donor_strength"] = mol_map["sdc"] + mol_map["sdx"]
+    return useful_dict
+
+# molecule = input("type molecule nameejfijflsjfkl ")
+# print(create_useful_dict(molecule))
         
 
-chem_name = input("TYPE YOUR CHEMICAL!! ")
-print(create_molecular_map(chem_name))
+# chem_name = input("TYPE YOUR CHEMICAL!! ")
+# print(create_molecular_map(chem_name))
 
 # chem_name = input("Chemical name: ").lower()
 

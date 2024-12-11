@@ -6,7 +6,7 @@ import numpy as np
 import csv
 
 
-chem_names = ['water', 'hydrogen', 'carbon dioxide', 'ethene']
+chem_names = ['water', 'hydrogen', 'carbon dioxide', 'ethene', 'dopamine']
 
 atomic_nums = {'H': 1, 'C': 6, 'O': 8}
 

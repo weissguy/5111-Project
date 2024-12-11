@@ -6,7 +6,53 @@ import pydub
 from midi2audio import FluidSynth
 from pydub import AudioSegment
 import itertools
+
 import os
+import os, sys, getopt, glob, random, re, subprocess
+    
+def is_fsynth_installed():
+    """ Check to make sure fluidsynth exists in the PATH """
+    for path in os.environ['PATH'].split(os.pathsep):
+        f = os.path.join(path, 'fluidsynth')
+        if os.path.exists(f) and os.access(f, os.X_OK):
+            return True
+        
+    return False
+
+print(is_fsynth_installed())
+
+def to_audio(sf2, midi_file, out_dir, out_type='wav', txt_file=None, append=True):
+    """ 
+    Convert a single midi file to an audio file.  If a text file is specified,
+    the first line of text in the file will be used in the name of the output
+    audio file.  For example, with a MIDI file named '01.mid' and a text file
+    with 'A    major', the output audio file would be 'A_major_01.wav'.  If
+    append is false, the output name will just use the text (e.g. 'A_major.wav')
+    
+    Args:
+        sf2 (str):        the file path for a .sf2 soundfont file
+        midi_file (str):  the file path for the .mid midi file to convert
+        out_dir (str):    the directory path for where to write the audio out
+        out_type (str):   the output audio type (see 'fluidsynth -T help' for options)
+        txt_file (str):   optional text file with additional information of how to name 
+                          the output file
+        append (bool):    whether or not to append the optional text to the original
+                          .mid file name or replace it
+    """
+    fbase = os.path.splitext(os.path.basename(midi_file))[0]
+    if not txt_file:
+        out_file = out_dir + '/' + fbase + '.' + out_type
+    else:
+        line = 'out'
+        with open(txt_file, 'r') as f:
+            line = re.sub(r'\s', '_', f.readline().strip())
+            
+        if append:
+            out_file = out_dir + '/' + line + '_' + fbase + '.' + out_type
+        else:
+            out_file = out_dir + '/' + line + '.' + out_type
+
+    subprocess.call(['fluidsynth', '-T', out_type, '-F', out_file, '-ni', sf2, midi_file])
 
 # import IPython.display
 # import matplotlib.pyplot as plt
@@ -88,13 +134,16 @@ import os
 # data = pd.read_csv("data.csv")
 
 molecule = pretty_midi.PrettyMIDI()
-molecule_instr = pretty_midi.Instrument(program = 4)
+molecule_instr = pretty_midi.Instrument(program = 94)
 a_note = pretty_midi.Note(velocity = 100, pitch = int(pretty_midi.hz_to_note_number(440)), start =0, end=1)
-note_2 = pretty_midi.Note(velocity = 100, pitch = 61, start =0, end=1)
-note_3 = 
+# note_2 = pretty_midi.Note(velocity = 100, pitch = 61, start =0, end=1)
+# note_3 = pretty_midi.Note(velocity = 100, pitch = 64, start =0, end=1)
+# molecule_instr.notes.extend([a_note, note_2, note_3])
 molecule_instr.notes.append(a_note)
 molecule.instruments.append(molecule_instr)
-molecule.write("sonification/mid_files/instr4.mid")
+molecule.write("web_app/sonification/mid_files/metallic.mid")
+to_audio("web_app/sonification/arachno.sf2", f"web_app/sonification/mid_files/metallic.mid", "web_app/sonification/wav_files")
+
 
 # # Initialize the synthesizer (you need a soundfont file, e.g., a .sf2 file)
 # soundfont = "path/to/your/soundfont.sf2"
