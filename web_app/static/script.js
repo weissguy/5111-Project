@@ -32,8 +32,32 @@ document.getElementById('submit-btn').addEventListener('click', () => {
         return;
     }
 
+    // Update the audio version options based on the selected molecule
+    updateAudioVersionOptions(selectedMolecule);
+
+    // Display the audio version selector
+    const audioSelector = document.getElementById('audio-selector');
+    audioSelector.style.display = 'block';
+
+    // Store the selected molecule for later use
+    sessionStorage.setItem('selectedMolecule', selectedMolecule);
+});
+
+// Add event listener for the 'Play Audio' button
+document.getElementById('play-btn').addEventListener('click', () => {
+    const selectedMolecule = sessionStorage.getItem('selectedMolecule');
+
+    // Get the selected version from the dropdown
+    const selectedVersion = document.getElementById('audio-version').value;
+
+    if (!selectedMolecule) {
+        alert('Please select a molecule first.');
+        return;
+    }
+
+    // Construct the image path
+    const imagePath = `../static/gifs/${selectedMolecule}_${selectedVersion}.gif`; // Adjust according to your file names
     //const imagePath = `../static/pngs/${selectedMolecule}.png`
-    const imagePath = `../static/gifs/${selectedMolecule}_0.gif`
     const imageElement = document.getElementById('molecule-image');
     imageElement.src = imagePath;
     imageElement.style.display = 'block';
