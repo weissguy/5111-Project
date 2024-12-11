@@ -60,6 +60,7 @@ def create_visualisation(molecule_name):
     # Cleanup
     os.remove(sdf_file)
 
+# create_visualisation(molecule_name)
 
 # pymol.finish_launching(['pymol', '-q'])
 
